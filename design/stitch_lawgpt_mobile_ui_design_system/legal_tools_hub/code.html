@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error": "#ffb4ab", "on-secondary-fixed": "#002115", "secondary": "#68dbad", "on-primary-container": "#5b4000", "on-tertiary-container": "#8e0019", "on-tertiary-fixed": "#410006", "background": "#0e1323", "error-container": "#93000a", "on-secondary": "#003827", "inverse-on-surface": "#2b3041", "on-secondary-container": "#003121", "surface-container-high": "#25293a", "on-error": "#690005", "outline": "#9c8f7c", "primary-container": "#e0a93b", "surface-dim": "#0e1323", "secondary-fixed": "#85f8c8", "surface": "#0e1323", "surface-variant": "#2f3446", "inverse-surface": "#dee1f9", "tertiary-fixed-dim": "#ffb3b0", "primary-fixed-dim": "#f7bd4d", "secondary-container": "#25a37a", "surface-tint": "#f7bd4d", "on-background": "#dee1f9", "inverse-primary": "#7c5800", "surface-container-low": "#161b2b", "on-primary-fixed": "#271900", "on-primary": "#422d00", "primary-fixed": "#ffdea8", "tertiary": "#ffbdba", "on-error-container": "#ffdad6", "outline-variant": "#4f4535", "surface-bright": "#34394a", "on-tertiary": "#68000f", "tertiary-container": "#ff9491", "surface-container-highest": "#2f3446", "primary": "#ffc454", "on-primary-fixed-variant": "#5e4200", "on-tertiary-fixed-variant": "#92011a", "tertiary-fixed": "#ffdad8", "secondary-fixed-dim": "#68dbad", "surface-container": "#1a1f30", "on-secondary-fixed-variant": "#00513a", "on-surface": "#dee1f9", "surface-container-lowest": "#080d1d", "on-surface-variant": "#d3c4b0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "margin": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"] }, fontSize: { "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #0e1323; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span class="font-medium text-on-surface">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="LawGPT Scale of Justice Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wb04JYHp_llBNla6JxFl83H1rec5QNe1_ztLXXddMeWAc0q2DgAEzTW07ff9tqfQti9MGGmqh59KxJFtUQEY55tPobe4dEfCcCynDHYeaF8LBDs7cZl9jG-f6AwDzoJ18BBLkZWZB7wLiHnUFTG_NBxcHUNHUFBX_SVbHfN6vnZo1foSArzgmgiGebqClXXcMehvJ7OD6t6lNlrRgs9b-hmMPfZjcyRGHZyPzE69RZNCsFUjZNEC1hqg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">LawGPT</span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Legal Tools</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Switch Language" class="min-h-[44px] px-space-sm py-space-xs bg-surface-container-high rounded-full flex items-center justify-center"><span class="font-label-sm text-label-sm text-primary font-semibold">EN</span><span class="font-label-sm text-label-sm text-on-surface-variant mx-0.5">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">अ</span><span class="font-label-sm text-label-sm text-on-surface-variant mx-0.5">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">म</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Header Intro & Quick Search -->
+<div class="flex flex-col pt-space-sm pb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Legal Tools</span>
+<div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary">2024 Acts Live</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">
+      Instant utilities for everyday Indian legal situations
+    </p>
+<!-- Interactive Search Bar -->
+<div class="relative mt-space-md">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-10 rounded-lg bg-surface-container text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none transition-colors" id="toolSearchInput" placeholder="Search tools, converters &amp; guides..." type="text"/>
+<button aria-label="Clear Search" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-on-surface-variant hover:text-on-surface" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Filter Pills for Micro-delight -->
+<div class="flex items-center gap-space-xs overflow-x-auto mt-space-sm py-1 no-scrollbar">
+<button class="filter-chip px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-all active:scale-95" data-filter="all">All (12)</button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface transition-all active:scale-95" data-filter="criminal">Criminal &amp; Police</button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface transition-all active:scale-95" data-filter="docs">Docs &amp; Formats</button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface transition-all active:scale-95" data-filter="emergency">Emergency Aid</button>
+</div>
+</div>
+<!-- Tools Grid: 2 Columns for Android 360px viewport -->
+<div class="grid grid-cols-2 gap-space-sm" id="toolsContainer">
+<!-- Tool 1: IPC to BNS Converter -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="criminal" data-keywords="ipc bns bhartiya nyaya sanhita converter sections penal code 420 302 376" data-title="IPC to BNS Converter">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">sync_alt</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">New</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">IPC to BNS</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Map old IPC sections to new Bharatiya Nyaya Sanhita 2023.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Instant convert</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 2: FIR Guide -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="criminal" data-keywords="fir guide police zero fir checklist complaint thana" data-title="FIR Guide">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm">Verified</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">FIR Guide</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Step-by-step FIR filing checklist &amp; zero FIR procedures.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Checklist flow</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 3: Know Your Rights -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="criminal" data-keywords="know rights police arrest tenant women consumer constitution" data-title="Know Your Rights">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">balance</span>
+</div>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Know Your Rights</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Citizens rights: police, tenant, women &amp; consumer laws.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>View handbook</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 4: Legal Documents -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="docs" data-keywords="legal documents notices affidavits rti rent agreement formats drafts" data-title="Legal Documents">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm">50+ Formats</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Legal Documents</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Ready-to-fill notices, affidavits &amp; RTI formats.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Browse drafts</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 5: Cyber Fraud Help (Emergency Badge) -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="emergency" data-keywords="cyber fraud 1930 upi scam bank freeze emergency helpline report" data-title="Cyber Fraud Help">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container/30 flex items-center justify-center text-tertiary group-hover:bg-error group-hover:text-on-error transition-colors">
+<span class="material-symbols-outlined text-[22px]">gpp_maybe</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container/40 text-tertiary font-label-sm text-label-sm font-semibold">1930 SOS</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Cyber Fraud Help</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Emergency steps for UPI &amp; bank account scams.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-tertiary font-label-sm text-label-sm font-semibold">
+<span>Golden hour protocol</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 6: Scenario Guides -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="emergency" data-keywords="scenario guides accident arrest wage dispute urgent situations what to do" data-title="Scenario Guides">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">explore</span>
+</div>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Scenario Guides</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Action plans: accident, arrest, or unpaid salary disputes.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Interactive triage</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 7: Legal Search -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="criminal" data-keywords="legal search acts bnss bsa constitution bare acts section finder" data-title="Legal Search">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">manage_search</span>
+</div>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Legal Search</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Search BNS, BNSS, BSA &amp; Constitution bare acts.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Lookup acts</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 8: Legal Glossary -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="docs" data-keywords="legal glossary terms vakalatnama bail cognizance meaning vocabulary simple words" data-title="Legal Glossary">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">menu_book</span>
+</div>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Legal Glossary</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          A-Z Indian legal terminology explained in simple words.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>3,000+ terms</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 9: Case Tracker -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="emergency" data-keywords="case tracker ecourts cnr number hearing dates high court supreme court alerts" data-title="Case Tracker">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">event_repeat</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm">eCourts</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Case Tracker</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Track hearing dates &amp; live case status alerts via CNR.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Sync CNR</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 10: Free Legal Aid (NALSA) -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="emergency" data-keywords="free legal aid nalsa dlsa lawyer pro bono government free services" data-title="Free Legal Aid">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">handshake</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">Free</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Legal Aid (NALSA)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Find government free legal service authorities near you.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Find DLSA center</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 11: Document Analysis -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="docs" data-keywords="document analysis scanner ai review tricky clauses agreement contract lease" data-title="Document Analysis">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">document_scanner</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">AI Scan</span>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Doc Analysis</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Scan agreements &amp; identify red flags or hidden clauses.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Upload &amp; scan</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+<!-- Tool 12: Saved Library -->
+<div class="tool-card group relative flex flex-col justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 active:scale-[0.98] shadow-sm cursor-pointer" data-category="docs" data-keywords="saved library bookmarks pinned sections draft notices advice notes" data-title="Saved Library">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[22px]">bookmarks</span>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm">6</div>
+</div>
+<h2 class="font-label-lg text-label-lg text-on-surface font-semibold line-clamp-1">Saved Library</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-3">
+          Your saved advice, bookmarked sections &amp; draft notices.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-space-sm text-primary font-label-sm text-label-sm">
+<span>Open archive</span>
+<span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Empty State when filtering/searching returns nothing -->
+<div class="hidden flex-col items-center justify-center py-12 px-space-md text-center" id="noResultsState">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">No legal tools found</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-[260px]">
+      We couldn't match any tools to your search query. Try keywords like "BNS", "FIR", or "Affidavit".
+    </p>
+<button class="mt-space-md px-space-md py-2 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md active:scale-95 transition-all" id="resetSearchBtn">
+      Clear Search
+    </button>
+</div>
+<!-- Bottom Regulatory Disclaimer Banner -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Statutory Disclaimer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+        LawGPT utilities provide automated algorithmic orientation based on Indian statutes. These tools do not constitute advocate-client privilege or formal legal counsel under the Advocates Act, 1961. Consult an enrolled advocate for judicial filings.
+      </p>
+</div>
+</div>
+<!-- Micro-Toast for Interactive Tap Feedback -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-40 hidden items-center gap-2 px-4 py-2 rounded-full bg-surface-container-highest shadow-xl text-on-surface font-label-md text-label-md transition-opacity" id="actionToast">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span id="actionToastText">Opening tool...</span>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('toolSearchInput');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const resetBtn = document.getElementById('resetSearchBtn');
+    const filterButtons = document.querySelectorAll('.filter-chip');
+    const toolCards = document.querySelectorAll('.tool-card');
+    const noResults = document.getElementById('noResultsState');
+    const toolsContainer = document.getElementById('toolsContainer');
+    const toast = document.getElementById('actionToast');
+    const toastText = document.getElementById('actionToastText');
+
+    let activeFilter = 'all';
+    let searchQuery = '';
+
+    function showToast(message) {
+      if (!toast) return;
+      toastText.textContent = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 1800);
+    }
+
+    function applyFilterAndSearch() {
+      let visibleCount = 0;
+      const query = searchQuery.toLowerCase().trim();
+
+      toolCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const title = card.getAttribute('data-title').toLowerCase();
+        const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+        
+        const matchesCategory = (activeFilter === 'all') || (category === activeFilter);
+        const matchesQuery = !query || title.includes(query) || keywords.includes(query);
+
+        if (matchesCategory && matchesQuery) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+        toolsContainer.classList.add('hidden');
+      } else {
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+        toolsContainer.classList.remove('hidden');
+      }
+    }
+
+    // Search input handlers
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      applyFilterAndSearch();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearBtn.classList.add('hidden');
+      applyFilterAndSearch();
+      searchInput.focus();
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        activeFilter = 'all';
+        clearBtn.classList.add('hidden');
+        updatePillsUI();
+        applyFilterAndSearch();
+      });
+    }
+
+    function updatePillsUI() {
+      filterButtons.forEach(btn => {
+        const filterVal = btn.getAttribute('data-filter');
+        if (filterVal === activeFilter) {
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        }
+      });
+    }
+
+    // Category Filter Chips
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeFilter = btn.getAttribute('data-filter');
+        updatePillsUI();
+        applyFilterAndSearch();
+      });
+    });
+
+    // Tap micro-interaction for cards
+    toolCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const title = card.getAttribute('data-title');
+        showToast('Launching ' + title);
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="ai-chat" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm mt-0.5">AI Chat</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-space-xs transition-colors text-primary" data-path="legal-tools" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">Tools</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="case-history" href="#"><span class="material-symbols-outlined text-[22px]">history</span><span class="font-label-sm text-label-sm mt-0.5">History</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="profile-settings" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

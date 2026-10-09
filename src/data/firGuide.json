@@ -1,0 +1,96 @@
+{
+  "source": "Bharatiya Nagarik Suraksha Sanhita 2023 (BNSS Section 173-175) & Lalita Kumari v. Govt. of U.P. (2014) 2 SCC 1",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "disclaimer": "LawGPT guides you through statutory Indian criminal procedure; it does not and cannot file an FIR or represent you before authorities.",
+  "steps": [
+    {
+      "step": 1,
+      "title": "Information vs. Complaint vs. FIR",
+      "subtitle": "Understand the legal distinction before approaching the police",
+      "keyConcept": "Cognizable offences mandate an FIR; non-cognizable offences require a magistrate order or NCR entry.",
+      "content": [
+        {
+          "heading": "What is an Information / Complaint?",
+          "text": "An allegation in writing or verbally made to a police officer stating that a crime has been committed. It can be for any matter—civil grievance, lost document, or minor dispute."
+        },
+        {
+          "heading": "What is an NCR (Non-Cognizable Report)?",
+          "text": "Recorded for petty offences (like minor verbal abuse or simple hurt). Police cannot investigate or arrest without a Judicial Magistrate's explicit direction."
+        },
+        {
+          "heading": "What is an FIR (First Information Report)?",
+          "text": "Under Section 173 of BNSS, an FIR is recorded strictly for Cognizable Offences (theft, robbery, assault, grievous hurt, rape, murder). Police must register it immediately without requiring court permission."
+        }
+      ],
+      "lawNote": "Lalita Kumari (2014) Constitution Bench: Registration of FIR is mandatory under Section 154 CrPC (now Section 173 BNSS) if the information discloses commission of a cognizable offence."
+    },
+    {
+      "step": 2,
+      "title": "Drafting Your Written Complaint",
+      "subtitle": "Essential details to write clearly before visiting the police station",
+      "keyConcept": "A well-structured factual statement prevents distortion during police station entry.",
+      "content": [
+        {
+          "heading": "Date, Time, & Location",
+          "text": "State the exact date, time, and precise landmark where the crime took place. If there was a delay in reporting, mention the reasonable cause (e.g., medical treatment, shock, travel)."
+        },
+        {
+          "heading": "Accused Details",
+          "text": "Provide names, parentage, address, or physical descriptions and vehicle license plates if names are unknown."
+        },
+        {
+          "heading": "Sequence of Events & Witnesses",
+          "text": "Narrate what happened chronologically in simple language without legal jargon. Mention names and phone numbers of any eyewitnesses present."
+        },
+        {
+          "heading": "List of Stolen or Damaged Items",
+          "text": "Include serial numbers, IMEI numbers (for mobile phones), invoice bills, or bank transaction IDs."
+        }
+      ],
+      "lawNote": "Always keep 2 identical signed copies. One copy is submitted to the Station House Officer (SHO), and the second is kept as your received/stamped copy."
+    },
+    {
+      "step": 3,
+      "title": "At the Police Station & Your Rights",
+      "subtitle": "Navigating the General Diary, Zero FIR, and Free Copy receipt",
+      "keyConcept": "You have an absolute statutory right to receive a signed, stamped FIR copy free of cost.",
+      "content": [
+        {
+          "heading": "Reading Over & Verification",
+          "text": "Under Section 173(1) BNSS, if the complaint is taken down verbally by the officer, it must be read over to you in your language before you sign it."
+        },
+        {
+          "heading": "Zero FIR (Jurisdiction Doesn't Matter)",
+          "text": "Under BNSS Section 173(1), if the crime took place outside the local police station limits, they CANNOT turn you away. They must register a 'Zero FIR' and transfer it to the concerned police station."
+        },
+        {
+          "heading": "Free Copy of FIR",
+          "text": "Under Section 173(2) BNSS, a copy of the FIR must be given to the informant immediately, free of cost, stamped with the official station seal."
+        }
+      ],
+      "lawNote": "Never sign a blank paper or a statement you have not read or do not understand."
+    },
+    {
+      "step": 4,
+      "title": "Remedies if Police Refuse Registration",
+      "subtitle": "Statutory escalations under BNSS 173(4) and 175(3)",
+      "keyConcept": "Police inaction is legally challengeable through higher officers and Judicial Magistrates.",
+      "content": [
+        {
+          "heading": "Step 4A: Superintendent of Police (SP / DCP)",
+          "text": "Under Section 173(4) BNSS, send the complaint substance by registered post or electronic communication to the Superintendent of Police. If satisfied, the SP shall investigate or order an investigation."
+        },
+        {
+          "heading": "Step 4B: Application to Judicial Magistrate",
+          "text": "Under Section 175(3) BNSS (formerly Section 156(3) CrPC), approach the Judicial Magistrate First Class with an affidavit showing refusal by the SHO and SP. The Magistrate can order the police to register the FIR and investigate."
+        },
+        {
+          "heading": "Step 4C: State / National Human Rights Commission",
+          "text": "If police misconduct, unlawful detention, or bias is involved, file a complaint with the State Human Rights Commission (SHRC) or Police Complaints Authority."
+        }
+      ],
+      "lawNote": "Section 199 BNS (Section 166A IPC): Public servant disobeying law or failing to register FIR in certain sexual offenses faces up to 2 years imprisonment."
+    }
+  ]
+}

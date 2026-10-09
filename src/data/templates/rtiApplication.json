@@ -1,0 +1,149 @@
+{
+  "id": "rti-application",
+  "title": {
+    "en": "RTI Application (Form A)",
+    "hi": "सूचना का अधिकार आवेदन (प्रपत्र क)",
+    "mr": "माहिती अधिकार अर्ज (नमुना अ)"
+  },
+  "description": {
+    "en": "Statutory application under Section 6(1) of the Right to Information Act, 2005 to Public Information Officer (PIO).",
+    "hi": "सूचना का अधिकार अधिनियम, 2005 की धारा 6(1) के तहत जन सूचना अधिकारी को औपचारिक आवेदन।",
+    "mr": "माहितीचा अधिकार अधिनियम, २००५ च्या कलम ६(१) अन्वये जन माहिती अधिकाऱ्यास द्यायचा अर्ज."
+  },
+  "category": "Statutory Rights & Governance",
+  "source": "Right to Information Act, 2005 (Act No. 22 of 2005)",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "todo": "TODO: Requires verification of application fee (typically ₹10 via IPO/Court Fee Stamp) and appropriate Public Authority designation.",
+  "fields": [
+    {
+      "id": "pioDesignation",
+      "label": {
+        "en": "Public Information Officer Designation & Office",
+        "hi": "जन सूचना अधिकारी का पदनाम एवं कार्यालय",
+        "mr": "जन माहिती अधिकारी पद आणि कार्यालय"
+      },
+      "placeholder": {
+        "en": "The Public Information Officer, Municipal Corporation of Greater Mumbai, Fort, Mumbai",
+        "hi": "जन सूचना अधिकारी, नगर निगम, सिविल लाइंस",
+        "mr": "जन माहिती अधिकारी, महानगरपालिका कार्यालय"
+      },
+      "helperText": {
+        "en": "Public Authority holding the records requested.",
+        "hi": "वह सार्वजनिक प्राधिकरण जिसके पास मांगी गई सूचना उपलब्ध है।",
+        "mr": "ज्या कार्यालयाकडे माहिती उपलब्ध आहे ते कार्यालय."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "applicantName",
+      "label": {
+        "en": "Applicant Full Name",
+        "hi": "आवेदक का पूरा नाम",
+        "mr": "अर्जदाराचे पूर्ण नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Anand Deshmukh",
+        "hi": "उदा. आनंद देशमुख",
+        "mr": "उदा. आनंद देशमुख"
+      },
+      "helperText": {
+        "en": "Must be an Indian Citizen.",
+        "hi": "भारतीय नागरिक होना अनिवार्य है।",
+        "mr": "भारतीय नागरिक असणे आवश्यक."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "applicantAddress",
+      "label": {
+        "en": "Postal Address for Response",
+        "hi": "उत्तर प्राप्त करने हेतु डाक पता",
+        "mr": "उत्तर मिळवण्यासाठी टपाल पत्ता"
+      },
+      "placeholder": {
+        "en": "e.g. 104, Green Park, Shivajinagar, Pune - 411005",
+        "hi": "उदा. 104, ग्रीन पार्क, शिवाजीनगर, पुणे",
+        "mr": "उदा. १०४, ग्रीन पार्क, शिवाजीनगर, पुणे - ४११००५"
+      },
+      "helperText": {
+        "en": "PIO will send certified reply to this address.",
+        "hi": "पीआईओ इस पते पर पंजीकृत डाक से जवाब भेजेंगे।",
+        "mr": "या पत्त्यावर अधिकृत माहिती पाठवली जाईल."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "applicantContact",
+      "label": {
+        "en": "Mobile / Email Address",
+        "hi": "मोबाइल नंबर / ईमेल पता",
+        "mr": "भ्रमणध्वनी / ईमेल"
+      },
+      "placeholder": {
+        "en": "9876543210 / applicant@gmail.com",
+        "hi": "9876543210",
+        "mr": "९८७६५४३२१०"
+      },
+      "helperText": {
+        "en": "For telephonic clarification if needed.",
+        "hi": "दूरभाष संपर्क हेतु।",
+        "mr": "संपर्कासाठी."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 80 }
+    },
+    {
+      "id": "particularsOfInfo",
+      "label": {
+        "en": "Particulars of Information Sought (Specific Questions)",
+        "hi": "वांछित सूचना का विवरण (विशिष्ट प्रश्न)",
+        "mr": "मागितलेल्या माहितीचा तपशील (विशिष्ट प्रश्न)"
+      },
+      "placeholder": {
+        "en": "1. Certified copy of tender sanction order for road repairs on MG Road.\n2. Total funds allocated and disbursed till date.\n3. Inspection of measurement books for the project.",
+        "hi": "1. सड़क मरम्मत हेतु स्वीकृत निविदा की प्रमाणित प्रतिलिपि।\n2. अब तक आवंटित एवं व्यय की गई कुल धनराशि का विवरण।",
+        "mr": "१. रस्ता दुरुस्तीच्या कामाच्या टेंडरची प्रमाणित प्रत.\n२. मंजूर व खर्च झालेला एकूण निधीचा तपशील."
+      },
+      "helperText": {
+        "en": "Keep questions specific, precise, and numbered. Do not ask for opinions or 'why'.",
+        "hi": "प्रश्न स्पष्ट, संख्याबद्ध एवं वस्तुपरक रखें। राय या 'क्यों' न पूछें।",
+        "mr": "प्रश्न नेमके आणि मुद्यांनुसार असावेत. 'का' असे विचारू नये."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 20, "maxLength": 1500 }
+    },
+    {
+      "id": "bplStatus",
+      "label": {
+        "en": "Is Applicant Below Poverty Line (BPL)?",
+        "hi": "क्या आवेदक गरीबी रेखा से नीचे (BPL) है?",
+        "mr": "अर्जदार दारिद्र्यरेषेखालील (BPL) आहे का?"
+      },
+      "placeholder": {
+        "en": "No",
+        "hi": "नहीं",
+        "mr": "नाही"
+      },
+      "helperText": {
+        "en": "BPL applicants are exempt from application and copying fees.",
+        "hi": "बीपीएल आवेदकों को आवेदन शुल्क से छूट प्राप्त है।",
+        "mr": "बीपीएल अर्जदारांना शुल्क माफी असते."
+      },
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "no", "label": { "en": "No (Enclosing ₹10 Fee via IPO / Stamp)", "hi": "नहीं (₹10 शुल्क संलग्न)", "mr": "नाही (₹१० शुल्क समाविष्ट)" } },
+        { "value": "yes", "label": { "en": "Yes (BPL Card Attached - Fee Exempt)", "hi": "हाँ (बीपीएल कार्ड संलग्न - शुल्क मुक्त)", "mr": "होय (बीपीएल कार्ड जोडले आहे)" } }
+      ]
+    }
+  ]
+}

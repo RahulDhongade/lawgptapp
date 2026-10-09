@@ -1,0 +1,87 @@
+{
+  "source": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs & Reserve Bank of India (RBI)",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "notes": "TODO: Emergency numbers verified with I4C guidelines. Requires review for state-specific cyber cell escalation channels.",
+  "emergencyHelpline": "1930",
+  "portalUrl": "https://cybercrime.gov.in",
+  "scenarios": [
+    {
+      "id": "fraud_upi_qr",
+      "title": "UPI / QR Code / Unauthorized Debit Scam",
+      "description": "Scammer sent a QR code claiming 'Scan to receive money' or debited money via fake merchant links.",
+      "criticalAlert": "Rule: You NEVER enter your UPI PIN to receive money. A PIN is required solely to SEND money.",
+      "immediateActions": [
+        "Call 1930 IMMEDIATELY (within the 2-hour Golden Hour) to freeze beneficiary accounts.",
+        "Open your UPI app (GPay/PhonePe/Paytm) and report the transaction under 'Payment Fraud'.",
+        "Call your bank customer care to hotlist debit cards and block net-banking access."
+      ]
+    },
+    {
+      "id": "fraud_hacked_account",
+      "title": "Hacked Social Media or Email Account",
+      "description": "Lost access to WhatsApp, Instagram, or Gmail account; hacker asking contacts for money.",
+      "criticalAlert": "Post a status/warning from a family member's phone alerting friends not to send any money.",
+      "immediateActions": [
+        "Use official account recovery (accounts.google.com / instagram.com/hacked).",
+        "Enable Two-Factor Authentication (2FA) with an authenticator app on all secondary accounts.",
+        "Report cyber impersonation on cybercrime.gov.in under 'Cyber Crime Against Women/Children' or 'Other Cyber Crimes'."
+      ]
+    },
+    {
+      "id": "fraud_investment_job",
+      "title": "Fake Job / Telegram Task Investment Scam",
+      "description": "Promised high returns for liking YouTube videos, rating hotels, or crypto trading on a fake portal.",
+      "criticalAlert": "Any scheme promising 20-50% guaranteed daily returns is an illegal Ponzi/fraud scheme.",
+      "immediateActions": [
+        "Stop sending any further 'tax clearance' or 'withdrawal fees' money immediately.",
+        "Export and save full Telegram / WhatsApp chat logs and crypto/bank wallet addresses.",
+        "File a detailed complaint on cybercrime.gov.in mentioning the channel admins and bank account details."
+      ]
+    },
+    {
+      "id": "fraud_fake_shopping",
+      "title": "Counterfeit E-Commerce & Fake Delivery Link",
+      "description": "Ordered from an Instagram ad or clicked an SMS link claiming 'Parcel delayed - update KYC'.",
+      "criticalAlert": "Do not download any APK files (e.g. AnyDesk, RustDesk, QuickSupport) sent via WhatsApp.",
+      "immediateActions": [
+        "Uninstall any unrecognized app downloaded recently.",
+        "Disconnect phone from Wi-Fi/data and restart in safe mode if remote screen sharing was enabled.",
+        "Report the fake merchant website URL to cybercrime.gov.in."
+      ]
+    },
+    {
+      "id": "fraud_sim_swap",
+      "title": "SIM Swap & Identity Theft",
+      "description": "Phone suddenly lost mobile network signal after a fake telecom verification call.",
+      "criticalAlert": "A sudden network loss accompanied by unauthorized OTP notifications indicates an active SIM swap attack.",
+      "immediateActions": [
+        "Contact your telecom operator (Jio/Airtel/Vi) from another number to block your SIM instantly.",
+        "Alert your bank to pause SMS-based OTP authorization for 48 hours.",
+        "Visit your telecom store with original Aadhaar to reissue your physical SIM."
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "stage": 1,
+      "name": "Act Immediately (The Golden Hour)",
+      "action": "Dial 1930 to connect to the Citizen Financial Cyber Fraud Reporting System. Have your 12-digit transaction UTR number and bank name ready. Police will coordinate with banks to freeze recipient accounts in real-time."
+    },
+    {
+      "stage": 2,
+      "name": "Collect & Preserve Evidence",
+      "action": "Take uncropped screenshots of SMS messages, bank passbook/statement entries, UPI transaction details, caller phone numbers, and WhatsApp/Telegram chats. Do not delete fraudulent chats."
+    },
+    {
+      "stage": 3,
+      "name": "File Formal Portal Complaint",
+      "action": "Visit cybercrime.gov.in within 24 hours. Submit the detailed incident report with all screenshots attached. Note down the 14-digit Complaint Acknowledgment Number."
+    },
+    {
+      "stage": 4,
+      "name": "Bank Redressal & RBI Ombudsman",
+      "action": "Submit a physical copy of the cyber complaint to your home bank branch within 3 days. Under RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18, reporting unauthorized electronic transactions within 3 days ensures zero liability for the customer if bank systems were compromised."
+    }
+  ]
+}

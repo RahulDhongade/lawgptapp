@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#bbc3ff", "on-tertiary-fixed-variant": "#005048", "surface-tint": "#515a98", "on-secondary-fixed-variant": "#643f00", "tertiary-container": "#00241f", "on-error": "#ffffff", "on-tertiary": "#ffffff", "secondary-fixed": "#ffddb5", "surface": "#fcf8ff", "on-secondary": "#ffffff", "on-primary": "#ffffff", "tertiary-fixed": "#8df5e4", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f2efff", "on-primary-fixed-variant": "#39427e", "background": "#fcf8ff", "primary": "#000224", "surface-container-high": "#e8e5ff", "inverse-surface": "#2f2e43", "on-error-container": "#93000a", "surface-bright": "#fcf8ff", "primary-fixed": "#dfe0ff", "on-background": "#1a1a2e", "on-surface": "#1a1a2e", "on-primary-container": "#7982c3", "tertiary-fixed-dim": "#70d8c8", "on-surface-variant": "#464650", "on-tertiary-container": "#229688", "primary-container": "#0d1754", "on-primary-fixed": "#091351", "on-tertiary-fixed": "#00201c", "surface-container-highest": "#e2e0fc", "outline": "#767681", "outline-variant": "#c6c5d1", "primary-fixed-dim": "#bbc3ff", "surface-variant": "#e2e0fc", "surface-container-low": "#f5f2ff", "on-secondary-container": "#694300", "secondary-fixed-dim": "#ffb957", "surface-dim": "#dad7f3", "error": "#ba1a1a", "secondary": "#835400", "secondary-container": "#fcab28", "surface-container": "#efecff", "tertiary": "#000806", "error-container": "#ffdad6", "on-secondary-fixed": "#2a1800" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-desktop": "3rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-tablet": "1.5rem", "space-md": "1rem", "margin": "1rem", "margin-tablet": "2rem", "gutter-desktop": "2rem", "space-xl": "2rem", "gutter": "1rem", "space-xs": "0.25rem" }, fontFamily: { "display-sm": ["Newsreader"], "headline-md": ["Newsreader"], "body-md": ["Manrope"], "label-sm": ["Manrope"], "body-lg": ["Manrope"], "headline-lg": ["Newsreader"], "display-lg": ["Newsreader"], "body-sm": ["Manrope"], "label-md": ["Manrope"], "label-lg": ["Manrope"] }, fontSize: { "display-sm": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-md": ["1.25rem", { lineHeight: "1.75rem", fontWeight: "500" }], "body-md": ["0.9375rem", { lineHeight: "1.5rem", fontWeight: "400" }], "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.05em", fontWeight: "500" }], "body-lg": ["1.125rem", { lineHeight: "1.75rem", fontWeight: "400" }], "headline-lg": ["1.5rem", { lineHeight: "2rem", fontWeight: "600" }], "display-lg": ["2.5rem", { lineHeight: "3rem", letterSpacing: "-0.02em", fontWeight: "600" }], "body-sm": ["0.8125rem", { lineHeight: "1.25rem", fontWeight: "400" }], "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.04em", fontWeight: "600" }], "label-lg": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.02em", fontWeight: "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col antialiased selection:bg-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(13,23,84,0.06)]"><div class="h-[3px] w-full flex"><div class="h-full flex-1 bg-[#FF9933]"></div><div class="h-full flex-1 bg-surface-container-lowest"></div><div class="h-full flex-1 bg-[#138808]"></div></div><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Minimalist balance scales of justice logo icon for LawGPT, India's AI Legal Assistant. Elegant gold lines on transparent or deep dark navy, clean legal tech emblem.. Brand logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V-Dxxzsoz5uzp3u8L17RPDJ-UqcESwHc9-jwlyfE7XJ1IsKV5kZPo1AhqPwE1GBqrWeMzm2KchfrA0pwtkgityOyeM9rWCMF785xp9BJlLPH2NGZ5MPlF2s8fOfRwnomeCoQa2owBjgofexMgzkE5B-Pf2UOrVI2YpwJy1sQSN-pp4QCmWxeYJcOn_j1CbDu4q_eeSGHVa1VjVigR_m7DL_1MVD6e3qYwgJJJpHcY7a9-y_6XyGGgv6YU"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md font-semibold text-primary truncate leading-none">Admin Console</span></div><div class="flex items-center gap-space-xs mt-0.5"><span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">PROD v2.4 (BNS)</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Review Queue</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex flex-col items-end hidden xs:flex"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Adv. Vikram S.</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Reviewer</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Top Triage & Queue Meta Section -->
+<div class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-serif">AI Review Queue</h1>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm">
+          14 Pending
+        </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Audio verdict helper" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container active:scale-95 transition-transform shadow-sm" id="btn-sound-feedback">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button aria-label="Review velocity stats" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container active:scale-95 transition-transform shadow-sm" id="btn-quick-stats">
+<span class="material-symbols-outlined text-[18px]">insights</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+      Statutory compliance &amp; constitutional guardrails
+    </p>
+</div>
+<!-- Horizontal Scrollable Filter Chips -->
+<div class="w-full overflow-x-auto no-scrollbar px-margin py-space-xs flex items-center gap-space-xs">
+<button class="filter-chip active shrink-0 px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all" data-filter="all">
+      All (14)
+    </button>
+<button class="filter-chip shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shadow-sm transition-all flex items-center gap-1" data-filter="high-risk">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+      High-Risk (4)
+    </button>
+<button class="filter-chip shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shadow-sm transition-all flex items-center gap-1" data-filter="reported">
+<span class="material-symbols-outlined text-[13px] text-secondary">flag</span>
+      User Reported (8)
+    </button>
+<button class="filter-chip shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shadow-sm transition-all" data-filter="no-cit">
+      No Citation (4)
+    </button>
+<button class="filter-chip shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md shadow-sm transition-all" data-filter="low-conf">
+      Low Confidence (2)
+    </button>
+</div>
+<!-- Active Case Item: Case Card -->
+<div class="px-margin mt-space-md flex flex-col gap-space-md">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col gap-space-md relative overflow-hidden transition-all duration-300">
+<!-- Tricolor Civic Anchor Ribbon -->
+<div class="absolute top-0 left-0 right-0 h-[3px] flex">
+<div class="h-full flex-1 bg-[#FF9933]"></div>
+<div class="h-full flex-1 bg-surface-container-lowest"></div>
+<div class="h-full flex-1 bg-[#138808]"></div>
+</div>
+<!-- Case Header Meta & Risk Indicators -->
+<div class="pt-1 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm font-bold tracking-wide uppercase">
+<span class="material-symbols-outlined text-[12px]">warning</span>
+              High-Risk Topic
+            </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+              Sec 105 BNSS 2023
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            18m ago • Guardrail v3
+          </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-mono text-outline">Ticket ID: #CIT-8809-DL</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+            Art 21 Sensitive
+          </span>
+</div>
+</div>
+<!-- Citizen Query: Editorial Quote Display -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-1.5 shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">record_voice_over</span>
+            Citizen Prompt
+          </span>
+<span class="font-label-sm text-label-sm text-outline">New Delhi • Mobile Web</span>
+</div>
+<blockquote class="font-headline-md text-headline-md text-primary italic font-serif leading-snug">
+          “Can police seize my smartphone during a routine traffic stop without an FIR?”
+        </blockquote>
+</div>
+<!-- Law GPT Answer Preview: Structured Legal Assessment -->
+<div class="flex flex-col gap-space-sm bg-surface rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-semibold">Generated Answer Preview</span>
+</div>
+<button class="text-on-surface-variant text-label-sm font-label-sm flex items-center gap-0.5 px-1.5 py-0.5 rounded hover:bg-surface-container transition-colors" id="toggle-answer-card">
+<span id="toggle-label">Collapse</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="toggle-icon">expand_less</span>
+</button>
+</div>
+<!-- Collapsible Content Section -->
+<div class="flex flex-col gap-space-sm transition-all duration-300" id="collapsible-answer">
+<!-- Direct Legal Summary -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase tracking-wider">Statutory Opinion</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Police <strong class="text-error font-semibold">cannot arbitrarily seize</strong> personal electronic devices during a routine vehicular stop without a formal seizure memo and reasonable nexus to a registered cognizable crime or lawful warrant under BNSS mandate.
+            </p>
+</div>
+<!-- Verified Citations -->
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-tertiary-container">verified</span>
+              Citations Verified
+            </span>
+<div class="flex flex-col gap-1">
+<div class="flex items-start gap-2 bg-surface-container-lowest p-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-primary">Sec 105 BNSS 2023</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Search &amp; Seizure Protocol via mandatory audio-video electronic records.</span>
+</div>
+</div>
+<div class="flex items-start gap-2 bg-surface-container-lowest p-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-primary">Art 21 Constitution of India</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Right to Privacy &amp; Protection against self-incrimination (K.S. Puttaswamy).</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Procedural Safeguards List -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Mandatory Citizen Safeguards</span>
+<ul class="flex flex-col gap-1 text-on-surface font-body-sm text-body-sm">
+<li class="flex items-start gap-2">
+<span class="w-4 h-4 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">1</span>
+<span>Demand formal <strong>Seizure Memo (Panchnama)</strong> countersigned by independent witnesses.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-4 h-4 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">2</span>
+<span>Insist that reason for inspection be recorded in the police <strong>General Diary (GD)</strong> entry.</span>
+</li>
+</ul>
+</div>
+<!-- Model Confidence Radar / Integrity Score -->
+<div class="flex items-center justify-between px-space-xs pt-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Constitutional Alignment</span>
+<span class="font-label-md text-label-md font-bold text-on-tertiary-container">98.4%</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">fingerprint</span>
+<span>Audit Hash #BNS-4491</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Next In Queue: Carousel Preview -->
+<div class="mt-space-lg px-margin flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">queue_play_next</span>
+<h2 class="font-headline-md text-headline-md text-primary font-serif">Next in Moderation Queue</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Swipe to cycle</span>
+</div>
+<!-- Stacked Cards Track -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm font-mono text-outline font-bold">#CIT-8804</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">BNS 318 vs IPC 420</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">flag</span>
+            User Reported
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-1 font-serif italic">
+          “What is the exact penalty for cheating under BNS 318 compared to old IPC 420?”
+        </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Citation discrepancy flagged by 3 users</span>
+<button class="font-label-md text-label-md text-primary font-bold flex items-center gap-0.5">
+            Triage Next
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs active:scale-[0.99] transition-transform">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm font-mono text-outline font-bold">#CIT-8762</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">Bail Protocols</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">speed</span>
+            Confidence 61%
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-1 font-serif italic">
+          “Can I seek anticipatory bail under Sec 482 for a bailable traffic summons?”
+        </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contradictory landmark rulings tagged</span>
+<button class="font-label-md text-label-md text-primary font-bold flex items-center gap-0.5">
+            Triage Next
+            <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Reviewer Feedback / Constitutional Quality Badge -->
+<div class="px-margin mt-space-lg mb-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">Senior Advocate Audit Bench</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Changes immediately update vector index</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">verified_user</span>
+</div>
+</div>
+<!-- Sticky Mobile Action Sheet & Decision Dock -->
+<div class="fixed bottom-16 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(13,23,84,0.12)] px-margin py-space-sm flex flex-col gap-space-xs transition-all">
+<!-- Advocate Remark Input Bar -->
+<div class="flex items-center gap-2 bg-surface-container-low rounded-lg px-space-sm py-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">edit_note</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="advocate-note-input" placeholder="Add reviewer remark or statutory rider..." type="text"/>
+<button class="px-2 py-0.5 rounded bg-surface text-primary font-label-sm text-label-sm font-semibold shrink-0 shadow-sm" id="btn-quick-tag">
+        + Rider
+      </button>
+</div>
+<!-- Tier-1 Immediate Verdict Buttons (Mobile 48px Touch Targets) -->
+<div class="grid grid-cols-2 gap-space-xs mt-0.5">
+<!-- Edit & Correct (Accent Gold) -->
+<button class="h-12 w-full rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" id="btn-edit-correct">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+        Edit &amp; Correct
+      </button>
+<!-- Approve Answer (Institutional Green / Emerald Action) -->
+<button class="h-12 w-full rounded-lg bg-on-tertiary-container text-on-tertiary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform" id="btn-approve-answer">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+        Approve Answer
+      </button>
+</div>
+<!-- Tier-2 Secondary Governance Buttons -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-9 w-full rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 shadow-sm active:bg-surface-container-high transition-colors" id="btn-benchmark">
+<span class="material-symbols-outlined text-[16px] text-secondary">science</span>
+        Add to Benchmark Test
+      </button>
+<button class="h-9 w-full rounded-lg bg-surface-container text-error font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 shadow-sm active:bg-error-container transition-colors" id="btn-escalate-block">
+<span class="material-symbols-outlined text-[16px]">block</span>
+        Escalate / Block
+      </button>
+</div>
+</div>
+<!-- Toast Notification Dynamic Placeholder -->
+<div class="fixed top-20 left-4 right-4 z-50 pointer-events-none transform -translate-y-6 opacity-0 transition-all duration-300 flex justify-center" id="toast-verdict">
+<div class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-2 max-w-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-msg">Verdict recorded. Next ticket loading...</span>
+</div>
+</div>
+</div>
+<script>
+  // Mobile Interaction Handlers
+  (function initReviewQueue() {
+    // 1. Collapsible Answer Preview Toggle
+    const toggleBtn = document.getElementById('toggle-answer-card');
+    const collapsible = document.getElementById('collapsible-answer');
+    const toggleIcon = document.getElementById('toggle-icon');
+    const toggleLabel = document.getElementById('toggle-label');
+    let isExpanded = true;
+
+    if (toggleBtn && collapsible) {
+      toggleBtn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        if (!isExpanded) {
+          collapsible.classList.add('hidden');
+          toggleIcon.classList.add('rotate-180');
+          toggleLabel.textContent = 'Expand';
+        } else {
+          collapsible.classList.remove('hidden');
+          toggleIcon.classList.remove('rotate-180');
+          toggleLabel.textContent = 'Collapse';
+        }
+      });
+    }
+
+    // 2. Filter Chips Interactive Selection
+    const filterChips = document.querySelectorAll('.filter-chip');
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        chip.classList.add('bg-primary', 'text-on-primary');
+        showToast('Filter updated: ' + chip.textContent.trim(), 'filter_list');
+      });
+    });
+
+    // 3. Quick Toast Messenger
+    const toast = document.getElementById('toast-verdict');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+    let toastTimeout;
+
+    function showToast(message, icon = 'verified') {
+      if (!toast) return;
+      clearTimeout(toastTimeout);
+      toastMsg.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('-translate-y-6', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('-translate-y-6', 'opacity-0');
+      }, 2400);
+    }
+
+    // 4. Action Handlers with tactile feedback
+    const approveBtn = document.getElementById('btn-approve-answer');
+    const editBtn = document.getElementById('btn-edit-correct');
+    const benchmarkBtn = document.getElementById('btn-benchmark');
+    const escalateBtn = document.getElementById('btn-escalate-block');
+    const quickTagBtn = document.getElementById('btn-quick-tag');
+    const noteInput = document.getElementById('advocate-note-input');
+
+    if (approveBtn) {
+      approveBtn.addEventListener('click', () => {
+        showToast('Answer Verified & Published to Live Citizen Query #CIT-8809', 'task_alt');
+        if (noteInput) noteInput.value = '';
+      });
+    }
+
+    if (editBtn) {
+      editBtn.addEventListener('click', () => {
+        showToast('Entering Statutory Edit Mode for BNSS 105...', 'edit_square');
+      });
+    }
+
+    if (benchmarkBtn) {
+      benchmarkBtn.addEventListener('click', () => {
+        showToast('Added #CIT-8809 to Golden Eval Test Suite', 'science');
+      });
+    }
+
+    if (escalateBtn) {
+      escalateBtn.addEventListener('click', () => {
+        showToast('Escalated to Constitutional Council & Blocked', 'gavel');
+      });
+    }
+
+    if (quickTagBtn && noteInput) {
+      quickTagBtn.addEventListener('click', () => {
+        noteInput.value = 'Reiterate mandatory presence of two independent panchas.';
+        noteInput.focus();
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(13,23,84,0.08)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-space-xs grid grid-cols-5 items-center"><a class="flex flex-col items-center justify-center h-full min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-primary" data-path="overview" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Overview</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center h-full min-h-[44px] min-w-[44px] transition-colors text-primary font-semibold" data-path="review-queue" href="#"><div class="relative"><span class="material-symbols-outlined text-[22px]">verified_user</span><span class="absolute -top-1 -right-2.5 bg-secondary-container text-on-secondary-container font-label-sm text-[10px] leading-tight px-1 py-0.2 rounded-full font-bold shadow-sm">14</span></div><span class="font-label-sm text-label-sm mt-0.5">Review</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-primary" data-path="content-registry" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5">Content</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-primary" data-path="ai-health" href="#"><span class="material-symbols-outlined text-[22px]">memory</span><span class="font-label-sm text-label-sm mt-0.5">AI Health</span></a><a class="flex flex-col items-center justify-center h-full min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-primary" data-path="system-controls" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-sm text-label-sm mt-0.5">Controls</span></a></div></nav></body></html>

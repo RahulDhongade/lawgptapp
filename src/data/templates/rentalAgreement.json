@@ -1,0 +1,168 @@
+{
+  "id": "rental-agreement",
+  "title": {
+    "en": "Residential Rental / Lease Agreement",
+    "hi": "आवासीय किराया / पट्टा अनुबंध",
+    "mr": "घर भाडे / लिव्ह अँड लायसन्स करारनामा"
+  },
+  "description": {
+    "en": "11-month standard residential tenancy agreement between Landlord (Licensor) and Tenant (Licensee).",
+    "hi": "मकान मालिक और किराएदार के बीच 11 महीने का मानक आवासीय किराया अनुबंध।",
+    "mr": "घरमालक आणि भाडेकरू यांच्यातील ११ महिन्यांचा कायदेशीर भाडेकरार."
+  },
+  "category": "Property & Tenancy",
+  "source": "Transfer of Property Act, 1882 & State Rent Control Acts / Model Tenancy Act 2021",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "stateStampDutyNote": "Stamp duty rates and mandatory registration vary by State (e.g. in Maharashtra, registration of Leave and License is mandatory under Section 55 of Maharashtra Rent Control Act; in Karnataka/Delhi, 11-month agreements are typically executed on ₹100 or ₹500 e-stamp).",
+  "todo": "TODO: Requires advocate review, e-stamp paper purchase in accordance with state laws, and execution before two witnesses.",
+  "fields": [
+    {
+      "id": "landlordName",
+      "label": {
+        "en": "Landlord (Owner) Full Name",
+        "hi": "मकान मालिक (स्वामी) का पूरा नाम",
+        "mr": "घरमालकाचे पूर्ण नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Satish Narang",
+        "hi": "उदा. सतीश नारंग",
+        "mr": "उदा. सतीश नारंग"
+      },
+      "helperText": {
+        "en": "Legal owner of the premises.",
+        "hi": "संपत्ति का वास्तविक स्वामी।",
+        "mr": "जागेचा कायदेशीर मालक."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "tenantName",
+      "label": {
+        "en": "Tenant Full Name",
+        "hi": "किराएदार का पूरा नाम",
+        "mr": "भाडेकरूचे पूर्ण नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Rohit Verma",
+        "hi": "उदा. रोहित वर्मा",
+        "mr": "उदा. रोहित वर्मा"
+      },
+      "helperText": {
+        "en": "Person taking the property on rent.",
+        "hi": "किराए पर रहने वाला व्यक्ति।",
+        "mr": "जागा भाड्याने घेणारी व्यक्ती."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "premisesAddress",
+      "label": {
+        "en": "Rental Premises Complete Address",
+        "hi": "किराए के मकान का पूरा पता",
+        "mr": "भाड्याने दिलेल्या घराचा संपूर्ण पत्ता"
+      },
+      "placeholder": {
+        "en": "Flat 301, Tower B, Palm Heights, Electronic City, Bengaluru - 560100",
+        "hi": "फ्लैट 301, टावर बी, इलेक्ट्रॉनिक सिटी, बेंगलुरु",
+        "mr": "फ्लॅट ३०१, टॉवर बी, इलेक्ट्रॉनिक सिटी, बंगळुरू"
+      },
+      "helperText": {
+        "en": "Accurate description with flat number, building, and PIN code.",
+        "hi": "फ्लैट संख्या, इमारत और पिन कोड सहित सही पता।",
+        "mr": "सविस्तर पत्ता पिनकोडसह."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "monthlyRent",
+      "label": {
+        "en": "Monthly Rent Amount (INR ₹)",
+        "hi": "मासिक किराया राशि (रुपये ₹)",
+        "mr": "दरमहा भाडे रक्कम (रुपये ₹)"
+      },
+      "placeholder": {
+        "en": "22000",
+        "hi": "22000",
+        "mr": "२२०००"
+      },
+      "helperText": {
+        "en": "Exclusive of electricity and maintenance unless specified.",
+        "hi": "बिजली और रख-रखाव शुल्क से अलग।",
+        "mr": "वीज आणि देखभाल शुल्क वगळून."
+      },
+      "type": "number",
+      "required": true,
+      "validation": { "min": 500 }
+    },
+    {
+      "id": "securityDeposit",
+      "label": {
+        "en": "Security Deposit Amount (INR ₹)",
+        "hi": "सुरक्षा जमा (सिक्योरिटी डिपॉजिट) राशि (₹)",
+        "mr": "अनामत ठेव / डिपॉझिट रक्कम (₹)"
+      },
+      "placeholder": {
+        "en": "100000",
+        "hi": "100000",
+        "mr": "१०००००"
+      },
+      "helperText": {
+        "en": "Refundable upon vacating after deducting lawful arrears.",
+        "hi": "मकान खाली करने पर वैध कटौती के बाद वापसी योग्य।",
+        "mr": "घर सोडताना परत मिळणारी रक्कम."
+      },
+      "type": "number",
+      "required": true,
+      "validation": { "min": 0 }
+    },
+    {
+      "id": "commencementDate",
+      "label": {
+        "en": "Commencement Date (Tenancy Start)",
+        "hi": "अनुबंध प्रारंभ तिथि",
+        "mr": "कराराची सुरुवात तारीख"
+      },
+      "placeholder": {
+        "en": "YYYY-MM-DD (e.g. 2025-04-01)",
+        "hi": "2025-04-01",
+        "mr": "२०२५-०४-०१"
+      },
+      "helperText": {
+        "en": "Date from which tenancy begins.",
+        "hi": "जिस दिन से किराया लागू होगा।",
+        "mr": "भाडे सुरू होण्याची तारीख."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 8, "maxLength": 20 }
+    },
+    {
+      "id": "lockInMonths",
+      "label": {
+        "en": "Lock-in Period (Months)",
+        "hi": "लॉक-इन अवधि (महीने)",
+        "mr": "लॉक-इन कालावधी (महिने)"
+      },
+      "placeholder": {
+        "en": "6",
+        "hi": "6",
+        "mr": "६"
+      },
+      "helperText": {
+        "en": "Period during which neither party can terminate agreement without penalty.",
+        "hi": "वह अवधि जिसमें अनुबंध तोड़ा नहीं जा सकता।",
+        "mr": "किमान राहण्याचा कालावधी."
+      },
+      "type": "number",
+      "required": true,
+      "validation": { "min": 0, "max": 11 }
+    }
+  ]
+}

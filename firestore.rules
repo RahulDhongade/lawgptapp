@@ -1,0 +1,339 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // This security rules file assumes the following data structures:
+    //
+    // Collection: /users/{userId}
+    // Document ID: userId (matches Firebase Auth UID)
+    // Fields:
+    //   - id: string (required, immutable, max 128 chars) - User unique UID
+    //   - fullName: string (required, 1-100 chars) - Citizen / Advocate full legal name
+    //   - email: string (required, valid email pattern, max 150 chars) - User email
+    //   - mobile: string (optional, max 25 chars) - Contact mobile number
+    //   - role: string (required, 'citizen' | 'advocate' | 'admin', immutable on update by non-admins)
+    //   - barCouncilNumber: string | null (optional, max 60 chars) - Verified Bar Council enrollment ID
+    //   - avatarUrl: string | null (optional, valid URL, max 500 chars) - Profile avatar URL
+    //   - createdAt: string | timestamp (required, immutable) - Account creation ISO timestamp
+    //   - updatedAt: string | timestamp (optional) - Profile modification timestamp
+    //   - agreedToTerms: bool (optional) - DPDP / Terms consent confirmation
+    //   - language: string (optional, max 15 chars) - Preferred UI language ('en', 'hi', etc.)
+    //   - hasSeenOnboarding: bool (optional) - First-launch walkthrough flag
+    //   - hasAcceptedConsent: bool (optional) - Legal disclaimer acknowledgement
+    //   - biometricLockEnabled: bool (optional) - Local biometric security flag
+    //
+    // Collection: /users/{userId}/conversations/{conversationId}
+    // Document ID: conversationId (client-generated unique string)
+    // Fields:
+    //   - id: string (required, immutable, max 128 chars) - Conversation ID
+    //   - title: string (required, 1-300 chars) - Legal topic title
+    //   - lastMessageSnippet: string (required, max 2000 chars) - Preview summary
+    //   - updatedAt: string | timestamp (required) - Last activity timestamp
+    //   - createdAt: string | timestamp (optional, immutable) - Conversation creation timestamp
+    //   - messages: list of maps (required, max 300 messages) - Conversation history
+    //   - isPinned: bool (optional) - Pin status
+    //   - isArchived: bool (optional) - Archive status
+    //
+    // Collection: /users/{userId}/conversations/{conversationId}/messages/{messageId}
+    // Document ID: messageId (individual message document if subcollection pattern used)
+    // Fields:
+    //   - id: string (required, immutable, max 128 chars) - Message ID
+    //   - sender: string (required, 'user' | 'assistant') - Message originator
+    //   - timestamp: string | timestamp (required, max 60 chars) - Display timestamp
+    //   - queryText: string (optional, max 10000 chars) - User prompt query
+    //   - rawTextFallback: string (optional, max 10000 chars) - Unformatted response text
+    //   - structuredResponse: map (optional) - Structured AI statutory response payload
+    //
+    // Collection: /users/{userId}/cases/{caseId}
+    // Document ID: caseId (client-generated unique string)
+    // Fields:
+    //   - id: string (required, immutable, max 128 chars) - Case record ID
+    //   - caseName: string (required, 1-300 chars) - Legal case title (e.g. Ramesh v. State)
+    //   - caseNumber: string (required, 1-100 chars) - Formal filing number (e.g. CRL.M.C. 1420/2024)
+    //   - cnr: string (optional, max 50 chars) - eCourts 16-character CNR number
+    //   - court: string (required, 1-200 chars) - Court name / bench
+    //   - filingDate: string | timestamp (optional, max 50 chars) - Case filing date
+    //   - nextDate: string | timestamp (required, max 50 chars) - Next hearing date
+    //   - status: string (required, 'PENDING' | 'HEARING' | 'DISPOSED' | 'EVIDENCE' | 'ARGUMENTS')
+    //   - notes: string (optional, max 5000 chars) - Confidential case notes / strategy
+    //   - reminderEnabled: bool (required) - Hearing reminder alert toggle
+    //   - notificationId: string | null (optional, max 128 chars) - OS notification identifier
+    //   - isPinned: bool (optional) - Pin status in case diary
+    //   - createdAt: string | timestamp (required, immutable) - Record creation timestamp
+    //   - updatedAt: string | timestamp (required) - Record modification timestamp
+    //
+    // Collection: /users/{userId}/savedItems/{itemId}
+    // Document ID: itemId (client-generated unique string)
+    // Fields:
+    //   - id: string (required, immutable, max 128 chars) - Saved bookmark ID
+    //   - type: string (required, 'response' | 'section' | 'document') - Bookmark category
+    //   - title: string (required, 1-300 chars) - Saved item title / statutory heading
+    //   - category: string (required, 1-100 chars) - Legal classification (Criminal, Civil, etc.)
+    //   - content: string (required, 1-30000 chars) - Statutory text or saved advice
+    //   - metadata: map (optional) - Act reference, verified status, cross-references
+    //   - createdAt: string | timestamp (required, immutable) - Saved date
+    //   - updatedAt: string | timestamp (optional) - Update timestamp
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Global Helper Functions
+    // ===============================================================
+
+    // Check if the request is authenticated with Firebase Auth
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Check if the current authenticated user owns this user-scoped resource
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Check if the user possesses verified administrative claims
+    function isAdmin() {
+      return isAuthenticated() &&
+        (
+          (request.auth.token.keys().hasAny(['role']) && request.auth.token.role == 'admin') ||
+          (request.auth.token.keys().hasAny(['admin']) && request.auth.token.admin == true)
+        );
+    }
+
+    // Validate email address format
+    function isValidEmail(email) {
+      return email is string &&
+        email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    // Validate secure URL format
+    function isValidUrl(url) {
+      return url is string &&
+        (url.matches("^https://.*") || url.matches("^http://.*"));
+    }
+
+    // Validate date string or Firestore native timestamp
+    function isDateOrTimestamp(val) {
+      return (val is string && val.size() >= 10 && val.size() <= 50) || val is timestamp;
+    }
+
+    // ===============================================================
+    // Domain Validator Functions
+    // ===============================================================
+
+    // 1. User Profile Validator
+    function isValidUserProfile(data, userId) {
+      let allowedKeys = [
+        'id', 'fullName', 'email', 'mobile', 'role',
+        'barCouncilNumber', 'avatarUrl', 'createdAt', 'updatedAt',
+        'agreedToTerms', 'language', 'hasSeenOnboarding',
+        'hasAcceptedConsent', 'biometricLockEnabled'
+      ];
+      let requiredKeys = ['id', 'fullName', 'email', 'role', 'createdAt'];
+
+      return data.keys().hasOnly(allowedKeys) &&
+        data.keys().hasAll(requiredKeys) &&
+        data.id is string && data.id == userId && data.id.size() <= 128 &&
+        data.fullName is string && data.fullName.size() >= 1 && data.fullName.size() <= 100 &&
+        data.email is string && data.email.size() >= 3 && data.email.size() <= 150 && isValidEmail(data.email) &&
+        data.role is string && (data.role in ['citizen', 'advocate', 'admin']) &&
+        isDateOrTimestamp(data.createdAt) &&
+        (!('mobile' in data) || (data.mobile is string && data.mobile.size() <= 25)) &&
+        (!('barCouncilNumber' in data) || data.barCouncilNumber == null || (data.barCouncilNumber is string && data.barCouncilNumber.size() <= 60)) &&
+        (!('avatarUrl' in data) || data.avatarUrl == null || data.avatarUrl == '' || (data.avatarUrl is string && data.avatarUrl.size() <= 500 && isValidUrl(data.avatarUrl))) &&
+        (!('updatedAt' in data) || isDateOrTimestamp(data.updatedAt)) &&
+        (!('agreedToTerms' in data) || data.agreedToTerms is bool) &&
+        (!('language' in data) || (data.language is string && data.language.size() <= 15)) &&
+        (!('hasSeenOnboarding' in data) || data.hasSeenOnboarding is bool) &&
+        (!('hasAcceptedConsent' in data) || data.hasAcceptedConsent is bool) &&
+        (!('biometricLockEnabled' in data) || data.biometricLockEnabled is bool);
+    }
+
+    // 2. Chat Conversation Validator
+    function isValidConversation(data, conversationId) {
+      let allowedKeys = [
+        'id', 'title', 'lastMessageSnippet', 'updatedAt',
+        'createdAt', 'messages', 'isPinned', 'isArchived'
+      ];
+      let requiredKeys = ['id', 'title', 'lastMessageSnippet', 'updatedAt', 'messages'];
+
+      return data.keys().hasOnly(allowedKeys) &&
+        data.keys().hasAll(requiredKeys) &&
+        data.id is string && data.id == conversationId && data.id.size() <= 128 &&
+        data.title is string && data.title.size() >= 1 && data.title.size() <= 300 &&
+        data.lastMessageSnippet is string && data.lastMessageSnippet.size() <= 2000 &&
+        isDateOrTimestamp(data.updatedAt) &&
+        (!('createdAt' in data) || isDateOrTimestamp(data.createdAt)) &&
+        data.messages is list && data.messages.size() <= 300 &&
+        (!('isPinned' in data) || data.isPinned is bool) &&
+        (!('isArchived' in data) || data.isArchived is bool);
+    }
+
+    // Message subcollection item validator
+    function isValidMessage(data, messageId) {
+      let allowedKeys = ['id', 'sender', 'timestamp', 'queryText', 'rawTextFallback', 'structuredResponse'];
+      let requiredKeys = ['id', 'sender', 'timestamp'];
+
+      return data.keys().hasOnly(allowedKeys) &&
+        data.keys().hasAll(requiredKeys) &&
+        data.id is string && data.id == messageId && data.id.size() <= 128 &&
+        data.sender is string && (data.sender in ['user', 'assistant']) &&
+        (data.timestamp is string && data.timestamp.size() <= 60 || data.timestamp is timestamp) &&
+        (!('queryText' in data) || (data.queryText is string && data.queryText.size() <= 10000)) &&
+        (!('rawTextFallback' in data) || (data.rawTextFallback is string && data.rawTextFallback.size() <= 10000)) &&
+        (!('structuredResponse' in data) || data.structuredResponse is map);
+    }
+
+    // 3. Tracked Case Validator
+    function isValidCase(data, caseId) {
+      let allowedKeys = [
+        'id', 'caseName', 'caseNumber', 'cnr', 'court',
+        'filingDate', 'nextDate', 'status', 'notes',
+        'reminderEnabled', 'notificationId', 'isPinned',
+        'createdAt', 'updatedAt'
+      ];
+      let requiredKeys = [
+        'id', 'caseName', 'caseNumber', 'court',
+        'nextDate', 'status', 'reminderEnabled',
+        'createdAt', 'updatedAt'
+      ];
+
+      return data.keys().hasOnly(allowedKeys) &&
+        data.keys().hasAll(requiredKeys) &&
+        data.id is string && data.id == caseId && data.id.size() <= 128 &&
+        data.caseName is string && data.caseName.size() >= 1 && data.caseName.size() <= 300 &&
+        data.caseNumber is string && data.caseNumber.size() >= 1 && data.caseNumber.size() <= 100 &&
+        data.court is string && data.court.size() >= 1 && data.court.size() <= 200 &&
+        (data.nextDate is string && data.nextDate.size() >= 1 && data.nextDate.size() <= 50 || data.nextDate is timestamp) &&
+        data.status is string && (data.status in ['PENDING', 'HEARING', 'DISPOSED', 'EVIDENCE', 'ARGUMENTS']) &&
+        data.reminderEnabled is bool &&
+        isDateOrTimestamp(data.createdAt) &&
+        isDateOrTimestamp(data.updatedAt) &&
+        (!('cnr' in data) || (data.cnr is string && data.cnr.size() <= 50)) &&
+        (!('filingDate' in data) || (data.filingDate is string && data.filingDate.size() <= 50) || data.filingDate is timestamp) &&
+        (!('notes' in data) || (data.notes is string && data.notes.size() <= 5000)) &&
+        (!('notificationId' in data) || data.notificationId == null || (data.notificationId is string && data.notificationId.size() <= 128)) &&
+        (!('isPinned' in data) || data.isPinned is bool);
+    }
+
+    // 4. Saved Bookmark / Item Validator
+    function isValidSavedItem(data, itemId) {
+      let allowedKeys = ['id', 'type', 'title', 'category', 'content', 'metadata', 'createdAt', 'updatedAt'];
+      let requiredKeys = ['id', 'type', 'title', 'category', 'content', 'createdAt'];
+
+      return data.keys().hasOnly(allowedKeys) &&
+        data.keys().hasAll(requiredKeys) &&
+        data.id is string && data.id == itemId && data.id.size() <= 128 &&
+        data.type is string && (data.type in ['response', 'section', 'document']) &&
+        data.title is string && data.title.size() >= 1 && data.title.size() <= 300 &&
+        data.category is string && data.category.size() >= 1 && data.category.size() <= 100 &&
+        data.content is string && data.content.size() >= 1 && data.content.size() <= 30000 &&
+        isDateOrTimestamp(data.createdAt) &&
+        (!('metadata' in data) || data.metadata is map) &&
+        (!('updatedAt' in data) || isDateOrTimestamp(data.updatedAt));
+    }
+
+    // ===============================================================
+    // Root Rule: Default Deny All Access
+    // ===============================================================
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // ===============================================================
+    // Collection Rules
+    // ===============================================================
+
+    // 1. User Profiles: /users/{userId}
+    match /users/{userId} {
+      // Confidential user profile - owner read only
+      allow read: if isOwner(userId);
+
+      // Create: Owner only, cannot self-assign admin role without admin claim
+      allow create: if isOwner(userId) &&
+        isValidUserProfile(request.resource.data, userId) &&
+        (request.resource.data.role in ['citizen', 'advocate'] || isAdmin());
+
+      // Update: Owner only, validated, cannot change immutable ID or createdAt, cannot escalate role
+      allow update: if isOwner(userId) &&
+        isValidUserProfile(request.resource.data, userId) &&
+        request.resource.data.id == resource.data.id &&
+        request.resource.data.createdAt == resource.data.createdAt &&
+        (request.resource.data.role == resource.data.role || isAdmin());
+
+      // Delete: Owner only (DPDP Act right to be forgotten)
+      allow delete: if isOwner(userId);
+
+      // -------------------------------------------------------------
+      // 2. Chat Conversations: /users/{userId}/conversations/{conversationId}
+      // -------------------------------------------------------------
+      match /conversations/{conversationId} {
+        allow read: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+          isValidConversation(request.resource.data, conversationId);
+
+        allow update: if isOwner(userId) &&
+          isValidConversation(request.resource.data, conversationId) &&
+          request.resource.data.id == resource.data.id &&
+          (!('createdAt' in resource.data) || request.resource.data.createdAt == resource.data.createdAt);
+
+        allow delete: if isOwner(userId);
+
+        // Optional subcollection messages
+        match /messages/{messageId} {
+          allow read: if isOwner(userId);
+
+          allow create: if isOwner(userId) &&
+            isValidMessage(request.resource.data, messageId);
+
+          allow update: if isOwner(userId) &&
+            isValidMessage(request.resource.data, messageId) &&
+            request.resource.data.id == resource.data.id &&
+            request.resource.data.sender == resource.data.sender &&
+            request.resource.data.timestamp == resource.data.timestamp;
+
+          allow delete: if isOwner(userId);
+        }
+      }
+
+      // -------------------------------------------------------------
+      // 3. Tracked Cases Diary: /users/{userId}/cases/{caseId}
+      // -------------------------------------------------------------
+      match /cases/{caseId} {
+        allow read: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+          isValidCase(request.resource.data, caseId);
+
+        allow update: if isOwner(userId) &&
+          isValidCase(request.resource.data, caseId) &&
+          request.resource.data.id == resource.data.id &&
+          request.resource.data.createdAt == resource.data.createdAt;
+
+        allow delete: if isOwner(userId);
+      }
+
+      // -------------------------------------------------------------
+      // 4. Saved Bookmarks Library: /users/{userId}/savedItems/{itemId}
+      // -------------------------------------------------------------
+      match /savedItems/{itemId} {
+        allow read: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+          isValidSavedItem(request.resource.data, itemId);
+
+        allow update: if isOwner(userId) &&
+          isValidSavedItem(request.resource.data, itemId) &&
+          request.resource.data.id == resource.data.id &&
+          request.resource.data.createdAt == resource.data.createdAt;
+
+        allow delete: if isOwner(userId);
+      }
+    }
+  }
+}

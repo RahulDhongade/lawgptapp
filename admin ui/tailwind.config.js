@@ -1,0 +1,42 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        background: '#0e1323',
+        surface: '#0e1323',
+        'surface-dim': '#0e1323',
+        'surface-bright': '#34394a',
+        'surface-container-lowest': '#080d1d',
+        'surface-container-low': '#161b2b',
+        'surface-container': '#1a1f30',
+        'surface-container-high': '#25293a',
+        'surface-container-highest': '#2f3446',
+        'on-surface': '#dee1f9',
+        'on-surface-variant': '#d3c4b0',
+        outline: '#9c8f7c',
+        'outline-variant': '#4f4535',
+        primary: '#ffc454',
+        'primary-container': '#e0a93b',
+        'on-primary': '#422d00',
+        'on-primary-container': '#5b4000',
+        secondary: '#68dbad',
+        'secondary-container': '#25a37a',
+        'on-secondary': '#003827',
+        'on-secondary-container': '#003121',
+        tertiary: '#ffbdba',
+        'tertiary-container': '#ff9491',
+        error: '#ffb4ab',
+        'error-container': '#93000a',
+        'on-error': '#690005',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['"IBM Plex Serif"', 'serif'],
+      },
+    },
+  },
+  plugins: [],
+};

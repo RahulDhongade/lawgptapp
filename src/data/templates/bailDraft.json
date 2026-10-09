@@ -1,0 +1,171 @@
+{
+  "id": "bail-draft",
+  "title": {
+    "en": "Bail Application Draft (BNSS)",
+    "hi": "जमानत आवेदन प्रारूप (नागरिक सुरक्षा संहिता)",
+    "mr": "जामीन अर्ज प्रारूप (नागरिक सुरक्षा संहिता)"
+  },
+  "description": {
+    "en": "Pro-forma regular or pre-arrest bail petition under Section 480 / 482 of Bharatiya Nagarik Suraksha Sanhita, 2023.",
+    "hi": "भारतीय नागरिक सुरक्षा संहिता, 2023 की धारा 480 / 482 के तहत जमानत अर्जी का प्रारूप।",
+    "mr": "भारतीय नागरिक सुरक्षा संहिता, २०२३ च्या कलम ४८० / ४८२ अंतर्गत जामीन अर्जाचा नमुना."
+  },
+  "category": "Criminal Law & Liberty",
+  "source": "Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) & High Court Criminal Rules of Practice",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "todo": "TODO: CRITICAL: Requires formal representation and signing by an enrolled Advocate before the Sessions Court or High Court.",
+  "fields": [
+    {
+      "id": "courtName",
+      "label": {
+        "en": "Court of Presentation",
+        "hi": "न्यायालय का नाम",
+        "mr": "न्यायालयाचे नाव"
+      },
+      "placeholder": {
+        "en": "In the Court of Ld. Sessions Judge, Tis Hazari Courts, Delhi",
+        "hi": "विद्वान सत्र न्यायाधीश, कड़कड़डूमा न्यायालय, दिल्ली",
+        "mr": "मा. सत्र न्यायालय, पुणे"
+      },
+      "helperText": {
+        "en": "Competent jurisdictional court where application is filed.",
+        "hi": "क्षेत्राधिकार वाला सक्षम न्यायालय।",
+        "mr": "संबंधित अधिकारक्षेत्रातील न्यायालय."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 5, "maxLength": 150 }
+    },
+    {
+      "id": "applicantName",
+      "label": {
+        "en": "Applicant / Accused Full Name",
+        "hi": "आवेदक / अभियुक्त का पूरा नाम",
+        "mr": "अर्जदार / आरोपीचे पूर्ण नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Vikas Yadav S/o Late Sh. Om Prakash",
+        "hi": "उदा. विकास यादव",
+        "mr": "उदा. विकास यादव"
+      },
+      "helperText": {
+        "en": "Name and parentage of the applicant seeking bail.",
+        "hi": "जमानत चाहने वाले व्यक्ति का नाम व पिता का नाम।",
+        "mr": "जामिनासाठी अर्ज करणाऱ्या व्यक्तीचे नाव."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "firNumber",
+      "label": {
+        "en": "FIR Number & Year",
+        "hi": "प्राथमिकी (FIR) संख्या एवं वर्ष",
+        "mr": "एफआयआर क्रमांक आणि वर्ष"
+      },
+      "placeholder": {
+        "en": "FIR No. 142/2024",
+        "hi": "एफआईआर नं. 142/2024",
+        "mr": "गुन्हा क्र. १४२/२०२४"
+      },
+      "helperText": {
+        "en": "Police case register number.",
+        "hi": "थाना अपराध क्रमांक।",
+        "mr": "पोलीस ठाण्यातील गुन्हा नोंद क्रमांक."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 50 }
+    },
+    {
+      "id": "policeStation",
+      "label": {
+        "en": "Police Station (Thana)",
+        "hi": "संबंधित थाना / पुलिस स्टेशन",
+        "mr": "पोलीस ठाणे"
+      },
+      "placeholder": {
+        "en": "P.S. Hauz Khas, South Delhi",
+        "hi": "थाना हौज खास",
+        "mr": "पोलीस ठाणे, हौज खास"
+      },
+      "helperText": {
+        "en": "Jurisdictional police station where FIR is registered.",
+        "hi": "वह पुलिस थाना जहां मामला दर्ज है।",
+        "mr": "संबंधित पोलीस ठाणे."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 80 }
+    },
+    {
+      "id": "sectionsInvoked",
+      "label": {
+        "en": "Sections Invoked (BNS / IPC)",
+        "hi": "लगाई गई धाराएं (BNS / IPC)",
+        "mr": "दाखल केलेली कलमे"
+      },
+      "placeholder": {
+        "en": "Under Sections 115(2), 351(2), 352 BNS (formerly 323, 504, 506 IPC)",
+        "hi": "धारा 115(2), 351(2) बीएनएस",
+        "mr": "कलम ११५(२), ३५१(२) बीएनएस"
+      },
+      "helperText": {
+        "en": "Offences alleged in the FIR.",
+        "hi": "एफआईआर में दर्ज कथित अपराध धाराएं।",
+        "mr": "गुन्ह्यामध्ये लावलेली कलमे."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 150 }
+    },
+    {
+      "id": "bailType",
+      "label": {
+        "en": "Type of Bail Sought",
+        "hi": "जमानत का प्रकार",
+        "mr": "जामिनाचा प्रकार"
+      },
+      "placeholder": {
+        "en": "Regular Bail",
+        "hi": "नियमित जमानत",
+        "mr": "नियमित जामीन"
+      },
+      "helperText": {
+        "en": "Regular Bail (in custody) or Anticipatory Bail (apprehension of arrest).",
+        "hi": "नियमित जमानत (हिरासत में) या अग्रिम जमानत (गिरफ्तारी की आशंका)।",
+        "mr": "नियमित जामीन किंवा अटकपूर्व जामीन."
+      },
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "regular", "label": { "en": "Regular Bail (Sec 480 BNSS / 439 CrPC)", "hi": "नियमित जमानत (धारा 480 बीएनएसएस)", "mr": "नियमित जामीन (कलम ४८० बीएनएसएस)" } },
+        { "value": "anticipatory", "label": { "en": "Anticipatory Bail (Sec 482 BNSS / 438 CrPC)", "hi": "अग्रिम जमानत (धारा 482 बीएनएसएस)", "mr": "अटकपूर्व जामीन (कलम ४८२ बीएनएसएस)" } },
+        { "value": "interim", "label": { "en": "Interim Bail", "hi": "अंतरिम जमानत", "mr": "तात्पुरता जामीन" } }
+      ]
+    },
+    {
+      "id": "groundsForBail",
+      "label": {
+        "en": "Grounds for Bail (Key Legal Reasons)",
+        "hi": "जमानत के आधार (विधिक कारण)",
+        "mr": "जामिनाची कायदेशीर कारणे"
+      },
+      "placeholder": {
+        "en": "1. False implication due to civil animosity.\n2. Applicant has deep roots in society and is not a flight risk.\n3. Investigation complete, recovery effected, custodial interrogation no longer required.\n4. Undertakes to cooperate with police and abide by all conditions.",
+        "hi": "1. आवेदक निर्दोष है तथा उसे रंजिशवश फंसाया गया है।\n2. आवेदक समाज में प्रतिष्ठित है और भागने का कोई खतरा नहीं है।\n3. कोई आपराधिक पूर्ववृत्त नहीं है।",
+        "mr": "१. अर्जदार निष्पाप असून त्याला खोट्या गुन्ह्यात अडकवण्यात आले आहे.\n२. अर्जदाराचा कोणताही पूर्वगुन्हेगारी इतिहास नाही.\n३. तपासात पूर्ण सहकार्य करण्याचे हमीपत्र."
+      },
+      "helperText": {
+        "en": "Key merits: innocence, lack of criminal antecedents, cooperation, medical grounds.",
+        "hi": "महत्वपूर्ण बिंदु: निर्दोषता, जांच में सहयोग, समाज में प्रतिष्ठा, स्वास्थ्य आदि।",
+        "mr": "तपासास सहकार्य, निष्पापपणा व समाजप्रतिष्ठा."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 25, "maxLength": 1500 }
+    }
+  ]
+}

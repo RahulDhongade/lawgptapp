@@ -1,0 +1,58 @@
+{
+  "title": "Police Stop & Arrest Rights (DK Basu Guidelines)",
+  "subtitle": "Essential Constitutional & BNSS Protections — 100% Offline Ready",
+  "source": "Supreme Court of India (D.K. Basu v. State of W.B., AIR 1997 SC 610) & Bharatiya Nagarik Suraksha Sanhita, 2023",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "VERIFIED_FROM_APEX_RULING",
+  "rights": [
+    {
+      "id": "qr_1",
+      "title": "1. Identification of Police Officers",
+      "act": "DK Basu Guideline #1",
+      "summary": "Police personnel carrying out arrest and handling interrogation must bear accurate, visible, and clear identification and name tags with their designations.",
+      "whatYouCanDo": "Politely note down the name, badge number, and police station of the officer questioning or arresting you."
+    },
+    {
+      "id": "qr_2",
+      "title": "2. Right to Know Grounds of Arrest",
+      "act": "Section 47 BNSS & Article 22(1) Constitution",
+      "summary": "Police officer must immediately disclose full particulars of the alleged offence and inform whether the offense is bailable or non-bailable.",
+      "whatYouCanDo": "Ask calmly: 'Officer, please state the specific section and whether this is a bailable matter.'"
+    },
+    {
+      "id": "qr_3",
+      "title": "3. Mandatory Arrest Memo",
+      "act": "Section 47 BNSS & DK Basu Guideline #2",
+      "summary": "Police must prepare an Arrest Memo on the spot, recording exact date, time, and location of arrest. It must be attested by at least one respectable witness (or family member) and countersigned by the arrestee.",
+      "whatYouCanDo": "Do not sign blank papers. Ensure date and time are written before appending your signature."
+    },
+    {
+      "id": "qr_4",
+      "title": "4. Intimation to Family or Friend",
+      "act": "Section 48 BNSS & DK Basu Guideline #4",
+      "summary": "Police must inform a relative, friend, or nominated person within 8 to 12 hours of the arrest and the location where the person is detained.",
+      "whatYouCanDo": "Demand your statutory right to place a telephone call to your family or legal counsel."
+    },
+    {
+      "id": "qr_5",
+      "title": "5. Magistrate Presentation within 24 Hours",
+      "act": "Article 22(2) Constitution & Section 57 BNSS",
+      "summary": "Every arrested person must be produced before the nearest Judicial Magistrate within 24 hours of arrest, excluding travel time. Detention beyond 24 hours without magistrate order is unconstitutional.",
+      "whatYouCanDo": "Remind officers of the 24-hour constitutional deadline if detention exceeds hours without remand."
+    },
+    {
+      "id": "qr_6",
+      "title": "6. Statutory Medical Examination",
+      "act": "Section 53 BNSS & DK Basu Guideline #7",
+      "summary": "Arrestee has the right to be medically examined by a registered medical practitioner at the time of arrest and every 48 hours during custody.",
+      "whatYouCanDo": "Request medical inspection to record any pre-existing injuries or physical conditions."
+    },
+    {
+      "id": "qr_7",
+      "title": "7. Special Protections for Women",
+      "act": "Section 43 BNSS",
+      "summary": "No woman can be arrested after sunset and before sunrise except in exceptional circumstances with prior written sanction from a Judicial Magistrate, and only in the presence of a female police officer.",
+      "whatYouCanDo": "Insist on the presence of a female police officer and prior judicial magistrate permission if approached at night."
+    }
+  ]
+}

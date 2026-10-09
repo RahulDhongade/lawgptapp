@@ -1,0 +1,170 @@
+{
+  "id": "legal-notice",
+  "title": {
+    "en": "Legal Notice for Recovery / Breach",
+    "hi": "वसूली / अनुबंध उल्लंघन हेतु कानूनी नोटिस",
+    "mr": "वसुली / करार भंगाबाबत कायदेशीर नोटीस"
+  },
+  "description": {
+    "en": "Formal legal notice demanding payment of unpaid dues or remedy for contractual breach.",
+    "hi": "बकाया राशि की मांग या संविदा उल्लंघन के समाधान हेतु औपचारिक कानूनी नोटिस।",
+    "mr": "थकीत रक्कम मिळवण्यासाठी किंवा कराराच्या उल्लंघनासाठी औपचारिक कायदेशीर नोटीस."
+  },
+  "category": "Civil & Commercial",
+  "source": "Standard Legal Drafting Practice, Bar Council of India guidelines",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "todo": "TODO: Requires advocate review and dispatch via Registered Post A.D. before judicial filing.",
+  "fields": [
+    {
+      "id": "senderName",
+      "label": {
+        "en": "Sender Full Name (Your Name)",
+        "hi": "प्रेषक का पूरा नाम (आपका नाम)",
+        "mr": "पाठविणाऱ्याचे पूर्ण नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Ramesh Kumar Sharma",
+        "hi": "उदा. रमेश कुमार शर्मा",
+        "mr": "उदा. रमेश कुमार शर्मा"
+      },
+      "helperText": {
+        "en": "The aggrieved party issuing this notice.",
+        "hi": "नोटिस जारी करने वाला पीड़ित पक्ष।",
+        "mr": "नोटीस बजावणारा तक्रारदार."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "senderAddress",
+      "label": {
+        "en": "Sender Complete Address",
+        "hi": "प्रेषक का पूरा पता",
+        "mr": "पाठविणाऱ्याचा संपूर्ण पत्ता"
+      },
+      "placeholder": {
+        "en": "e.g. Flat 402, Shanti Vihar, New Delhi - 110001",
+        "hi": "उदा. फ्लैट 402, शांति विहार, नई दिल्ली - 110001",
+        "mr": "उदा. फ्लॅट ४०२, शांती विहार, पुणे - ४११०३८"
+      },
+      "helperText": {
+        "en": "Postal communication address.",
+        "hi": "डाक पत्राचार का आधिकारिक पता।",
+        "mr": "पत्रव्यवहाराचा पत्ता."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "recipientName",
+      "label": {
+        "en": "Recipient / Defaulter Name",
+        "hi": "प्राप्तकर्ता / बकाएदार का नाम",
+        "mr": "ज्याला नोटीस द्यायची त्याचे नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Arvind Mehta (Director, ABC Retail Pvt Ltd)",
+        "hi": "उदा. अरविंद मेहता",
+        "mr": "उदा. अरविंद मेहता"
+      },
+      "helperText": {
+        "en": "Name of the individual or company in breach.",
+        "hi": "उल्लंघन करने वाले व्यक्ति या फर्म का नाम।",
+        "mr": "करार मोडणाऱ्या व्यक्तीचे किंवा संस्थेचे नाव."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "recipientAddress",
+      "label": {
+        "en": "Recipient Complete Address",
+        "hi": "प्राप्तकर्ता का पूरा पता",
+        "mr": "प्राप्तकर्त्याचा संपूर्ण पत्ता"
+      },
+      "placeholder": {
+        "en": "e.g. 12, Commercial Complex, MG Road, Mumbai - 400001",
+        "hi": "उदा. 12, कमर्शियल कॉम्प्लेक्स, एमजी रोड, मुंबई",
+        "mr": "उदा. १२, व्यावसायिक संकुल, एमजी रोड, मुंबई"
+      },
+      "helperText": {
+        "en": "Address where registered notice will be served.",
+        "hi": "वह पता जहां नोटिस भेजा जाएगा।",
+        "mr": "नोटीस पाठवण्याचा पत्ता."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "claimAmount",
+      "label": {
+        "en": "Claim Amount (in INR ₹)",
+        "hi": "दावा की गई राशि (रुपये ₹ में)",
+        "mr": "दावा केलेली रक्कम (रुपये ₹)"
+      },
+      "placeholder": {
+        "en": "e.g. 75,000",
+        "hi": "उदा. 75000",
+        "mr": "उदा. ७५०००"
+      },
+      "helperText": {
+        "en": "Principal pending amount.",
+        "hi": "मूल बकाया राशि।",
+        "mr": "थकीत मूळ रक्कम."
+      },
+      "type": "number",
+      "required": true,
+      "validation": { "min": 1 }
+    },
+    {
+      "id": "noticePeriodDays",
+      "label": {
+        "en": "Notice Period (Days to Comply)",
+        "hi": "नोटिस अवधि (भुगतान हेतु दिए गए दिन)",
+        "mr": "नोटीस कालावधी (दिवस)"
+      },
+      "placeholder": {
+        "en": "15",
+        "hi": "15",
+        "mr": "१५"
+      },
+      "helperText": {
+        "en": "Standard duration is usually 15 or 30 days.",
+        "hi": "मानक अवधि आमतौर पर 15 या 30 दिन होती है।",
+        "mr": "सहसा १५ किंवा ३० दिवसांची मुदत दिली जाते."
+      },
+      "type": "select",
+      "required": true,
+      "options": [
+        { "value": "15", "label": { "en": "15 Days", "hi": "15 दिन", "mr": "१५ दिवस" } },
+        { "value": "30", "label": { "en": "30 Days", "hi": "30 दिन", "mr": "३० दिवस" } }
+      ]
+    },
+    {
+      "id": "causeOfAction",
+      "label": {
+        "en": "Summary of Dispute & Facts",
+        "hi": "विवाद एवं तथ्यों का संक्षिप्त विवरण",
+        "mr": "तक्रारीचा तपशील आणि वस्तुस्थिती"
+      },
+      "placeholder": {
+        "en": "Goods supplied on 12th Jan against Invoice #102, payment cheque bounced due to insufficient funds.",
+        "hi": "सामान की आपूर्ति की गई थी, लेकिन जारी किया गया चेक अपर्याप्त निधि के कारण अनादरित हो गया।",
+        "mr": "माल पुरवला होता परंतु दिलेला धनादेश बँकेत वटला नाही."
+      },
+      "helperText": {
+        "en": "State dates, invoice or contract reference, and default description clearly.",
+        "hi": "तारीख, इनवॉइस या अनुबंध का संदर्भ स्पष्ट रूप से लिखें।",
+        "mr": "तारीख, देयक क्रमांक आणि कराराचा तपशील स्पष्ट लिहा."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 20, "maxLength": 1000 }
+    }
+  ]
+}

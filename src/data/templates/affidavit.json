@@ -1,0 +1,147 @@
+{
+  "id": "affidavit",
+  "title": {
+    "en": "General Sworn Affidavit",
+    "hi": "सामान्य शपथ पत्र (हलफनामा)",
+    "mr": "सर्वसाधारण प्रतिज्ञापत्र (शपथपत्र)"
+  },
+  "description": {
+    "en": "Standard sworn statement of facts on non-judicial stamp paper attested before Notary or Oath Commissioner.",
+    "hi": "नोटरी या शपथ आयुक्त के समक्ष सत्यापित तथ्यों का मानक शपथ पत्र।",
+    "mr": "नोंदणीकृत नोटरी किंवा दंडाधिकाऱ्यांसमोर सत्यकथन करणारे कायदेशीर प्रतिज्ञापत्र."
+  },
+  "category": "Civil & Declarations",
+  "source": "Oaths Act, 1969 & High Court Rules",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "stateStampDutyNote": "Stamp duty rates and stamp paper denomination vary by State (e.g. ₹10 in Delhi, ₹100 in UP, ₹500 in Maharashtra). Must be printed on non-judicial stamp paper and attested by a Notary Public.",
+  "todo": "TODO: Requires advocate review, execution on non-judicial stamp paper, and notarization.",
+  "fields": [
+    {
+      "id": "deponentName",
+      "label": {
+        "en": "Deponent Name (Your Full Name)",
+        "hi": "शपथकर्ता का नाम (आपका पूरा नाम)",
+        "mr": "प्रतिज्ञापत्रातील अर्जदाराचे पूर्ण नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Sunita Devi",
+        "hi": "उदा. सुनीता देवी",
+        "mr": "उदा. सुनिता देवी"
+      },
+      "helperText": {
+        "en": "Person declaring statements under oath.",
+        "hi": "शपथ लेकर बयान देने वाला व्यक्ति।",
+        "mr": "शपथेवर सत्यकथन करणारी व्यक्ती."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "parentOrSpouseName",
+      "label": {
+        "en": "Father's / Mother's / Spouse's Name",
+        "hi": "पिता / माता / पति का नाम",
+        "mr": "वडील / आई / पतीचे नाव"
+      },
+      "placeholder": {
+        "en": "e.g. D/o Late Shri Ram Prakash",
+        "hi": "उदा. पुत्री स्व. श्री राम प्रकाश",
+        "mr": "उदा. स्व. राम प्रकाश यांची कन्या"
+      },
+      "helperText": {
+        "en": "Parentage or spousal relation for legal identification.",
+        "hi": "पहचान हेतु अभिभावक या पति का नाम।",
+        "mr": "ओळखीसाठी पालक किंवा जोडीदाराचे नाव."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "age",
+      "label": {
+        "en": "Age (Years)",
+        "hi": "उम्र (वर्ष)",
+        "mr": "वय (वर्षे)"
+      },
+      "placeholder": {
+        "en": "e.g. 34",
+        "hi": "उदा. 34",
+        "mr": "उदा. ३४"
+      },
+      "helperText": {
+        "en": "Deponent must be major (18+ years).",
+        "hi": "शपथकर्ता बालिग (18 वर्ष से अधिक) होना चाहिए।",
+        "mr": "वय १८ वर्षांपेक्षा जास्त असावे."
+      },
+      "type": "number",
+      "required": true,
+      "validation": { "min": 18 }
+    },
+    {
+      "id": "residenceAddress",
+      "label": {
+        "en": "Permanent / Residential Address",
+        "hi": "स्थायी / निवास का पता",
+        "mr": "कायमचा / सध्याचा पत्ता"
+      },
+      "placeholder": {
+        "en": "e.g. House No. 55, Sector 14, Gurugram, Haryana - 122001",
+        "hi": "उदा. मकान नं. 55, सेक्टर 14, गुरुग्राम",
+        "mr": "उदा. घर क्र. ५५, सेक्टर १४, पुणे"
+      },
+      "helperText": {
+        "en": "Complete residential address as per Aadhaar/Voter ID.",
+        "hi": "पहचान पत्र अनुसार पूरा पता।",
+        "mr": "ओळखपत्रावरील पूर्ण पत्ता."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "purpose",
+      "label": {
+        "en": "Purpose of Affidavit",
+        "hi": "शपथ पत्र का उद्देश्य",
+        "mr": "प्रतिज्ञापत्राचे प्रयोजन"
+      },
+      "placeholder": {
+        "en": "e.g. Name change / Address proof / Loss of original certificate",
+        "hi": "उदा. नाम परिवर्तन / पते का प्रमाण / प्रमाण पत्र गुम होना",
+        "mr": "उदा. नावात बदल / पत्त्याचा पुरावा / प्रमाणपत्र गहाळ"
+      },
+      "helperText": {
+        "en": "Authority or agency to which affidavit is submitted.",
+        "hi": "विभाग या संस्था जिसके समक्ष शपथ पत्र प्रस्तुत किया जाएगा।",
+        "mr": "ज्या कार्यालयात सादर करायचे आहे त्याचा संदर्भ."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 5, "maxLength": 100 }
+    },
+    {
+      "id": "statements",
+      "label": {
+        "en": "Facts Declared Under Oath (Numbered points)",
+        "hi": "शपथ पूर्वक घोषित तथ्य (क्रमांक वार बिंदु)",
+        "mr": "शपथेवर जाहीर केलेले मुद्दे (क्रमांकानुसार)"
+      },
+      "placeholder": {
+        "en": "1. That my actual name is Sunita Devi as per Matriculation.\n2. That in my PAN card my name was erroneously printed as Sunita.\n3. That Sunita and Sunita Devi are one and the same person.",
+        "hi": "1. कि मेरा वास्तविक नाम सुनीता देवी है।\n2. कि पैन कार्ड में भूलवश केवल सुनीता दर्ज हो गया था।\n3. कि दोनों एक ही व्यक्ति हैं।",
+        "mr": "१. माझे नाव सुनिता देवी आहे.\n२. पॅन कार्डवर नजरचुकीने सुनिता असे नोंदवले गेले आहे.\n३. दोन्ही नावे एकाच व्यक्तीची आहेत."
+      },
+      "helperText": {
+        "en": "Provide truth statements verified to best of your knowledge.",
+        "hi": "अपनी सच्ची जानकारी के अनुसार क्रमबद्ध तथ्य लिखें।",
+        "mr": "सत्य असलेले मुद्दे स्पष्टपणे लिहा."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 20, "maxLength": 1500 }
+    }
+  ]
+}

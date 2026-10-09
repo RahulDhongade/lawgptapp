@@ -1,0 +1,118 @@
+{
+  "source": "Legislative Department, Ministry of Law and Justice, Government of India (Official Bare Acts)",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "notes": "TODO: Searchable index of foundational statutory sections. Requires advocate review before production release.",
+  "sections": [
+    {
+      "id": "sec_bns_103",
+      "act": "BNS",
+      "actFullName": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 103",
+      "title": "Punishment for Murder",
+      "text": "Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine. Sub-clause (2) explicitly penalizes group murder / mob lynching.",
+      "keywords": ["murder", "death", "life imprisonment", "mob lynching", "homicide", "103"],
+      "verified": true
+    },
+    {
+      "id": "sec_bns_318",
+      "act": "BNS",
+      "actFullName": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 318",
+      "title": "Cheating and dishonestly inducing delivery of property",
+      "text": "Whoever cheats and thereby dishonestly induces person deceived to deliver property, or alter valuable security, shall be punished with imprisonment up to seven years and fine.",
+      "keywords": ["cheating", "fraud", "dishonest", "property", "420", "318"],
+      "verified": true
+    },
+    {
+      "id": "sec_bns_64",
+      "act": "BNS",
+      "actFullName": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "Section 64",
+      "title": "Punishment for Rape",
+      "text": "Whoever commits rape shall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, and fine.",
+      "keywords": ["rape", "sexual assault", "women", "64", "376"],
+      "verified": true
+    },
+    {
+      "id": "sec_bnss_35",
+      "act": "BNSS",
+      "actFullName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "Section 35",
+      "title": "When police may arrest without warrant",
+      "text": "Any police officer may without an order from a Magistrate and without a warrant arrest any person who commits in the presence of a police officer a cognizable offence.",
+      "keywords": ["arrest", "warrant", "police", "cognizable", "custody", "35", "41"],
+      "verified": true
+    },
+    {
+      "id": "sec_bnss_173",
+      "act": "BNSS",
+      "actFullName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "Section 173",
+      "title": "Information in cognizable cases (Registration of FIR)",
+      "text": "Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing. Mandatory provision for Zero FIR and electronic FIR.",
+      "keywords": ["fir", "zero fir", "e-fir", "complaint", "police station", "173", "154"],
+      "verified": true
+    },
+    {
+      "id": "sec_bnss_480",
+      "act": "BNSS",
+      "actFullName": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "Section 480",
+      "title": "When bail may be taken in case of non-bailable offence",
+      "text": "When any person accused of, or suspected of, the commission of any non-bailable offence is arrested or detained without warrant, or appears before a court, he may be released on bail.",
+      "keywords": ["bail", "non-bailable", "surety", "bond", "release", "480", "437"],
+      "verified": true
+    },
+    {
+      "id": "sec_bsa_61",
+      "act": "BSA",
+      "actFullName": "Bharatiya Sakshya Adhiniyam, 2023",
+      "section": "Section 61",
+      "title": "Admissibility of electronic or digital records as evidence",
+      "text": "Nothing in this Adhiniyam shall apply to electronic records unless certified. Electronic evidence carries same legal sanctity as paper documents when accompanied by Section 63 certificate.",
+      "keywords": ["electronic evidence", "digital records", "whatsapp", "email", "65b", "61", "certificate"],
+      "verified": true
+    },
+    {
+      "id": "sec_const_19",
+      "act": "Constitution",
+      "actFullName": "Constitution of India",
+      "section": "Article 19",
+      "title": "Protection of certain rights regarding freedom of speech, etc.",
+      "text": "All citizens shall have the right: (a) to freedom of speech and expression; (b) to assemble peaceably and without arms; (c) to form associations or unions; (d) to move freely throughout India.",
+      "keywords": ["freedom of speech", "fundamental rights", "expression", "assembly", "article 19"],
+      "verified": true
+    },
+    {
+      "id": "sec_const_21",
+      "act": "Constitution",
+      "actFullName": "Constitution of India",
+      "section": "Article 21",
+      "title": "Protection of life and personal liberty",
+      "text": "No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+      "keywords": ["life", "personal liberty", "privacy", "fair trial", "article 21", "fundamental rights"],
+      "verified": true
+    },
+    {
+      "id": "sec_const_22",
+      "act": "Constitution",
+      "actFullName": "Constitution of India",
+      "section": "Article 22",
+      "title": "Protection against arrest and detention in certain cases",
+      "text": "No person who is arrested shall be detained in custody without being informed of grounds, nor denied right to consult and be defended by a legal practitioner of choice. Production within 24 hours.",
+      "keywords": ["arrest", "24 hours", "detention", "advocate", "magistrate", "article 22"],
+      "verified": true
+    },
+    {
+      "id": "sec_cpa_2_47",
+      "act": "Consumer Protection Act",
+      "actFullName": "Consumer Protection Act, 2019",
+      "section": "Section 2(47)",
+      "title": "Unfair trade practice",
+      "text": "A trade practice which, for the purpose of promoting sale, use or supply of goods or services, adopts any unfair method or deceptive practice including false representation, misleading warranty, or refusal to issue tax invoice.",
+      "keywords": ["consumer", "unfair trade", "refund", "defective", "counterfeit", "invoice"],
+      "verified": true
+    }
+  ]
+}

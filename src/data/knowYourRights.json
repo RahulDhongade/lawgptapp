@@ -1,0 +1,229 @@
+{
+  "source": "Statutory Compendium of Fundamental & Civil Rights in India (Constitution of India, BNSS, Consumer Protection Act, DPDP Act)",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "notes": "TODO: Standard statutory rights summaries. Requires advocate review before production release.",
+  "categories": [
+    {
+      "id": "rights_police_arrest",
+      "title": "Arrest & Police Custody Rights",
+      "icon": "ShieldAlert",
+      "summary": "Constitutional safeguards when interrogated, detained, or arrested by police officers in India.",
+      "items": [
+        {
+          "id": "right_grounds_of_arrest",
+          "right": "Right to Know Grounds of Arrest & Warrant Inspection",
+          "simpleExplanation": "The police cannot simply detain you without showing a warrant (for non-cognizable cases) or explicitly declaring what offence you are suspected of.",
+          "legalSource": "Article 22(1) of Constitution of India & Section 47 of BNSS, 2023 (Section 50 CrPC)",
+          "whatYouCanDo": [
+            "Politely request to inspect the warrant or ask for the specific section of law.",
+            "Ask whether the offence alleged is bailable or non-bailable.",
+            "Do not resist physically, but note badge numbers and names."
+          ],
+          "lastUpdated": "2024-07-01"
+        },
+        {
+          "id": "right_inform_family",
+          "right": "Right to Inform a Relative or Friend Immediately",
+          "simpleExplanation": "Police are under strict statutory duty to inform a designated relative or friend about your arrest and the exact station where you are held.",
+          "legalSource": "Section 48 of BNSS, 2023 & D.K. Basu v. State of West Bengal (1997)",
+          "whatYouCanDo": [
+            "Provide the police officer with your nominated family member's phone number.",
+            "Ensure the time of informing is noted in the station diary (GD)."
+          ],
+          "lastUpdated": "2024-07-01"
+        },
+        {
+          "id": "right_magistrate_24hrs",
+          "right": "Production Before Magistrate Within 24 Hours",
+          "simpleExplanation": "No police officer can keep you in police station lock-up beyond 24 hours excluding reasonable travel time without express magistrate orders.",
+          "legalSource": "Article 22(2) of Constitution & Section 58 of BNSS, 2023",
+          "whatYouCanDo": [
+            "Note the exact timestamp when you were brought to the police station.",
+            "Inform the magistrate directly if you were detained for more than 24 hours."
+          ],
+          "lastUpdated": "2024-07-01"
+        },
+        {
+          "id": "right_medical_exam",
+          "right": "Mandatory Medical Examination upon Arrest",
+          "simpleExplanation": "A registered medical practitioner must conduct a complete medical examination of the arrested person immediately after arrest to record physical condition and any pre-existing injuries.",
+          "legalSource": "Section 53 of BNSS, 2023 (Section 54 CrPC)",
+          "whatYouCanDo": [
+            "Request medical examination if experiencing any injury or illness.",
+            "Ensure any physical marks or torture signs are recorded in the medical memo."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_tenants",
+      "title": "Tenant & Landlord Rights",
+      "icon": "Home",
+      "summary": "Protections governing security deposits, unlawful evictions, and maintenance duties.",
+      "items": [
+        {
+          "id": "right_deposit_refund",
+          "right": "Fair Return of Security Deposit",
+          "simpleExplanation": "A landlord cannot arbitrarily withhold or deduct money from your security deposit for normal wear and tear without giving an itemized breakdown.",
+          "legalSource": "Model Tenancy Act, 2021 & State Rent Control Acts",
+          "whatYouCanDo": [
+            "Conduct a video walkthrough of the property at handover.",
+            "Issue a formal written notice claiming the deposit with a 15-day timeline.",
+            "Approach the Rent Authority or Consumer Commission if withheld unlawfully."
+          ],
+          "lastUpdated": "2024-07-01"
+        },
+        {
+          "id": "right_unlawful_eviction",
+          "right": "Protection from Forceful Eviction & Utility Disconnection",
+          "simpleExplanation": "Landlords are prohibited by law from cutting electricity, water, or locking doors without a court order, even if rent is delayed.",
+          "legalSource": "Section 20 of Model Tenancy Act & State Rent Control Legislations",
+          "whatYouCanDo": [
+            "File a complaint immediately with the local police station for wrongful restraint.",
+            "File an urgent petition before the Rent Court to restore essential services."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_women",
+      "title": "Women Safety & Legal Protections",
+      "icon": "Shield",
+      "summary": "Statutory shields for women including arrest guidelines, workplace sexual harassment, and domestic violence.",
+      "items": [
+        {
+          "id": "right_women_arrest_sunset",
+          "right": "No Arrest of Women Between Sunset and Sunrise",
+          "simpleExplanation": "As a rule, no woman can be arrested after sunset and before sunrise except in extraordinary circumstances with written judicial magistrate permission.",
+          "legalSource": "Section 43(5) of BNSS, 2023 (Section 46(4) CrPC)",
+          "whatYouCanDo": [
+            "Refuse arrest by male officers after sunset unless a female officer is present with a Judicial Magistrate order.",
+            "Call 1091 or 112 if forced by police after dusk."
+          ],
+          "lastUpdated": "2024-07-01"
+        },
+        {
+          "id": "right_posh_workplace",
+          "right": "Protection from Workplace Sexual Harassment (POSH)",
+          "simpleExplanation": "Every workplace with 10 or more employees must maintain an Internal Complaints Committee (ICC) to investigate grievances confidentially within 90 days.",
+          "legalSource": "Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013",
+          "whatYouCanDo": [
+            "Submit a written complaint to the Internal Committee within 3 months of the incident.",
+            "Request interim relief such as transfer or paid leave during the inquiry."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_consumer",
+      "title": "Consumer Rights & Fair Trade",
+      "icon": "ShoppingBag",
+      "summary": "Protections against counterfeit goods, defective services, misleading ads, and unfair contract terms.",
+      "items": [
+        {
+          "id": "right_unfair_trade",
+          "right": "Right to Replacement or Full Refund for Defective Products",
+          "simpleExplanation": "Sellers and e-commerce platforms cannot disclaim liability with 'No return under any circumstances' if a good is defective or counterfeit.",
+          "legalSource": "Section 2(47) & Section 84 of Consumer Protection Act, 2019",
+          "whatYouCanDo": [
+            "Preserve purchase invoices, unboxing video clips, and merchant communication.",
+            "Lodge a grievance on the National Consumer Helpline (1915).",
+            "File an online complaint on e-Daakhil (edaakhil.nic.in)."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_traffic",
+      "title": "Traffic Police & Challan Protocol",
+      "icon": "Compass",
+      "summary": "Rules governing vehicle stops, breathalyzers, document verification, and electronic receipts.",
+      "items": [
+        {
+          "id": "right_digilocker_docs",
+          "right": "Digital Driving License & RC Validity via DigiLocker",
+          "simpleExplanation": "Traffic police must accept electronic Driving License, RC, and Insurance shown on DigiLocker or mParivahan; physical originals are not mandatory.",
+          "legalSource": "Ministry of Road Transport and Highways (MoRTH) Notification RT-11036/64/2017-MVL",
+          "whatYouCanDo": [
+            "Present documents in the official DigiLocker app directly.",
+            "Do not surrender your phone; simply show the verified barcode/document."
+          ],
+          "lastUpdated": "2024-07-01"
+        },
+        {
+          "id": "right_key_snatching",
+          "right": "Traffic Police Cannot Snatch Ignition Keys",
+          "simpleExplanation": "Traffic personnel are strictly prohibited by police manuals from forcibly removing ignition keys from moving or stopped vehicles.",
+          "legalSource": "Central Motor Vehicles Rules, 1989 & State Police Circulars",
+          "whatYouCanDo": [
+            "Turn off the engine calmly and step out if requested.",
+            "Politely request the officer's name, e-challan machine ID, or bodycam footage."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_rti",
+      "title": "Right to Information (RTI)",
+      "icon": "FileText",
+      "summary": "Statutory right to access government records, public works inspection, and administrative documents.",
+      "items": [
+        {
+          "id": "right_rti_30days",
+          "right": "30-Day Mandatory Response by Public Authorities",
+          "simpleExplanation": "Any Indian citizen can file an RTI request with a 10 rupee fee, and the Public Information Officer (PIO) must furnish information within 30 days (or 48 hours for life & liberty).",
+          "legalSource": "Section 7(1) of Right to Information Act, 2005",
+          "whatYouCanDo": [
+            "File an online RTI via rtionline.gov.in.",
+            "File a First Appeal if no response is received after 30 days."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_seniors",
+      "title": "Senior Citizens' Protections",
+      "icon": "Users",
+      "summary": "Rights of elderly parents to maintenance, welfare tribunals, and revocation of gifted property.",
+      "items": [
+        {
+          "id": "right_senior_maintenance",
+          "right": "Right to Monthly Maintenance from Adult Children",
+          "simpleExplanation": "Senior citizens unable to maintain themselves can approach the Maintenance Tribunal for an order directing children or legal heirs to provide monthly sustenance.",
+          "legalSource": "Maintenance and Welfare of Parents and Senior Citizens Act, 2007",
+          "whatYouCanDo": [
+            "File an application before the Sub-Divisional Magistrate (SDM) / Maintenance Tribunal.",
+            "Proceedings are summary and do not require expensive advocate fees."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    },
+    {
+      "id": "rights_digital",
+      "title": "Digital Privacy & Data Protection",
+      "icon": "Lock",
+      "summary": "Rights regarding personal data collection, consent withdrawal, and grievance redressal against data fiduciaries.",
+      "items": [
+        {
+          "id": "right_dpdp_consent",
+          "right": "Right to Withdraw Consent and Erasure of Personal Data",
+          "simpleExplanation": "Digital companies cannot retain your personal information indefinitely once the specified service purpose is completed or consent is revoked.",
+          "legalSource": "Digital Personal Data Protection Act, 2023 (DPDP Act)",
+          "whatYouCanDo": [
+            "Send a data erasure or consent withdrawal request to the company's Data Protection Officer.",
+            "Escalate to the Data Protection Board of India if unaddressed."
+          ],
+          "lastUpdated": "2024-07-01"
+        }
+      ]
+    }
+  ]
+}

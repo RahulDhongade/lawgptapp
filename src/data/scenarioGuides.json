@@ -1,0 +1,112 @@
+{
+  "source": "Statutory Dispute & Triage Guides (Motor Vehicles Act, Transfer of Property Act, Payment of Wages Act, Consumer Protection Act)",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "notes": "TODO: Standardized scenario action trees. Requires advocate review before production release.",
+  "scenarios": [
+    {
+      "id": "scenario_police_stop",
+      "title": "Police Stopped Me On The Road",
+      "subtitle": "Traffic check, breathalyzer, and vehicle document verification",
+      "category": "Traffic & Criminal",
+      "flow": [
+        {
+          "step": 1,
+          "question": "Is the officer demanding original physical documents?",
+          "guidance": "Under MoRTH Notification RT-11036/64/2017-MVL, electronic documents stored on DigiLocker or mParivahan are legally valid and must be accepted by all police and transport officials across India.",
+          "options": ["Show DigiLocker barcode", "Do not surrender physical phone"]
+        },
+        {
+          "step": 2,
+          "question": "Are they conducting a breathalyzer / alcohol test?",
+          "guidance": "Under Section 203 of Motor Vehicles Act, police can administer a breath test. If you refuse without reasonable cause, you may be arrested under Section 203(3) and taken to a registered medical practitioner for a blood test.",
+          "options": ["Comply peacefully with breath test", "Ensure breathalyzer mouthpiece is freshly unwrapped"]
+        },
+        {
+          "step": 3,
+          "question": "Is an officer asking for spot cash payment without an e-challan?",
+          "guidance": "Only officers of the rank of Sub-Inspector (SI) or above are authorized to compound traffic fines on the spot. Always insist on an official printed e-challan or digital SMS receipt.",
+          "options": ["Demand official e-Challan receipt", "Pay via official parivahan.gov.in portal"]
+        }
+      ]
+    },
+    {
+      "id": "scenario_deposit_dispute",
+      "title": "Landlord Won't Return Security Deposit",
+      "subtitle": "Unfair deductions, post-vacating delays, and recovery options",
+      "category": "Tenancy & Civil",
+      "flow": [
+        {
+          "step": 1,
+          "question": "Have you vacated and returned keys?",
+          "guidance": "Ensure you have written evidence (email/WhatsApp confirmation) of key handover and date of vacating. Without this, landlord may claim ongoing rent liability.",
+          "options": ["Confirm written handover confirmation", "Keep photos of clean, empty premises"]
+        },
+        {
+          "step": 2,
+          "question": "Are deductions claimed for normal wear and tear?",
+          "guidance": "Under tenancy laws, painting and normal structural weathering due to age are the landlord's maintenance responsibility and cannot be deducted from the tenant's security deposit unless specifically clause-stipulated.",
+          "options": ["Demand itemized bills/invoices for repairs", "Contest arbitrary general deductions"]
+        },
+        {
+          "step": 3,
+          "question": "Landlord refuses to refund after 30 days?",
+          "guidance": "Issue a formal Legal Notice through an advocate giving 15 days to refund with statutory interest. If unaddressed, approach the local Rent Authority or file a consumer/civil summary suit for recovery.",
+          "options": ["Send formal 15-day Demand Notice", "File before Rent Authority / Civil Court"]
+        }
+      ]
+    },
+    {
+      "id": "scenario_salary_unpaid",
+      "title": "Salary Unpaid or Delayed by Employer",
+      "subtitle": "Wage recovery, full & final settlement, and labor commissioner remedy",
+      "category": "Employment & Labor",
+      "flow": [
+        {
+          "step": 1,
+          "question": "What is your employment categorization?",
+          "guidance": "Employees covered under the Payment of Wages Act, 1936 must be paid within 7 to 10 days of the wage period completion. For managerial/executive roles, the employment contract and Indian Contract Act apply.",
+          "options": ["Review appointment letter & notice clause", "Gather payslips and bank statements"]
+        },
+        {
+          "step": 2,
+          "question": "Has the company given written reasons for delay?",
+          "guidance": "Send a formal email to HR and Finance requesting salary disbursement. Verbal promises cannot be enforced without an email paper trail.",
+          "options": ["Send written demand email with 7-day deadline", "Preserve work logs, attendance & email trail"]
+        },
+        {
+          "step": 3,
+          "question": "Employer still fails to pay Full & Final (F&F)?",
+          "guidance": "File a conciliation grievance with the Deputy Labour Commissioner (DLC). You can also send a Legal Notice under Section 33C of Industrial Disputes Act or Section 447 of Companies Act for fraud.",
+          "options": ["Approach District Labour Commissioner", "Issue statutory advocate legal notice"]
+        }
+      ]
+    },
+    {
+      "id": "scenario_defective_product",
+      "title": "Defective Product or Counterfeit Item",
+      "subtitle": "E-commerce returns, warranty refusal, and e-Daakhil filing",
+      "category": "Consumer Protection",
+      "flow": [
+        {
+          "step": 1,
+          "question": "Did you report the defect within the return window?",
+          "guidance": "Under the Consumer Protection (E-Commerce) Rules, 2020, platforms cannot impose unfair contract terms or refuse return of goods that differ from the description or have manufacturing defects.",
+          "options": ["Save tax invoice and order summary", "Record unboxing video or photographs of defect"]
+        },
+        {
+          "step": 2,
+          "question": "Did seller or customer service reject refund?",
+          "guidance": "Lodge an official grievance on the National Consumer Helpline portal (consumerhelpline.gov.in) or call toll-free 1915. Most major e-commerce platforms resolve tickets within 7 days once escalated here.",
+          "options": ["Register ticket on NCH 1915", "Tag platform grievance officer with NCH docket number"]
+        },
+        {
+          "step": 3,
+          "question": "Product caused injury or heavy financial loss?",
+          "guidance": "Under Chapter VI of Consumer Protection Act 2019, file a Product Liability action against both manufacturer and seller before the District Consumer Disputes Redressal Commission via e-Daakhil (edaakhil.nic.in).",
+          "options": ["File claim on e-Daakhil portal", "Claim cost + replacement + compensation"]
+        }
+      ]
+    }
+  ]
+}

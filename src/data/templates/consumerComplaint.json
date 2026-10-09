@@ -1,0 +1,167 @@
+{
+  "id": "consumer-complaint",
+  "title": {
+    "en": "Consumer Forum Complaint",
+    "hi": "उपभोक्ता आयोग शिकायत प्रारूप",
+    "mr": "ग्राहक मंच तक्रार अर्ज"
+  },
+  "description": {
+    "en": "Formal complaint format under Section 35 of the Consumer Protection Act, 2019 before District Commission.",
+    "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 के तहत जिला आयोग में प्रस्तुत करने हेतु प्रारूप।",
+    "mr": "ग्राहक संरक्षण कायदा, २०१९ च्या कलम ३५ अन्वये जिल्हा ग्राहक मंचाकडे सादर करावयाचा तक्रार अर्ज."
+  },
+  "category": "Consumer & Commercial",
+  "source": "Consumer Protection Act, 2019 (Act No. 35 of 2019)",
+  "lastUpdated": "2024-07-01",
+  "reviewStatus": "UNREVIEWED",
+  "todo": "TODO: Requires advocate review, fee payment via Bharatkosh/e-Daakhil, and verification affidavit.",
+  "fields": [
+    {
+      "id": "complainantName",
+      "label": {
+        "en": "Complainant Name (Consumer)",
+        "hi": "शिकायतकर्ता का नाम",
+        "mr": "तक्रारदाराचे नाव"
+      },
+      "placeholder": {
+        "en": "e.g. Meenakshi Sunderam",
+        "hi": "उदा. मीनाक्षी सुंदरम",
+        "mr": "उदा. मीनाक्षी सुंदरम"
+      },
+      "helperText": {
+        "en": "Individual consumer who purchased goods or hired services.",
+        "hi": "उपभोक्ता जिसने सामान खरीदा या सेवा ली।",
+        "mr": "वस्तू खरेदी करणारा किंवा सेवा घेणारा ग्राहक."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "complainantAddress",
+      "label": {
+        "en": "Complainant Address & Contact",
+        "hi": "शिकायतकर्ता का पता व संपर्क",
+        "mr": "तक्रारदाराचा पत्ता व फोन"
+      },
+      "placeholder": {
+        "en": "Flat 12B, Lakeview Apts, Chennai - 600028 | 9840123456",
+        "hi": "पता व मोबाइल नंबर",
+        "mr": "पत्ता आणि संपर्क"
+      },
+      "helperText": {
+        "en": "Postal communication details.",
+        "hi": "पत्राचार का पता।",
+        "mr": "पत्रव्यवहाराचा पत्ता."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "oppositePartyName",
+      "label": {
+        "en": "Opposite Party (Company / Seller Name)",
+        "hi": "विपक्षी दल (कंपनी / विक्रेता का नाम)",
+        "mr": "सामनेवाले पक्षकार (कंपनी / विक्रेता)"
+      },
+      "placeholder": {
+        "en": "e.g. Apex Electronics Ltd. & Authorized Dealer",
+        "hi": "उदा. एपेक्स इलेक्ट्रॉनिक्स लिमिटेड",
+        "mr": "उदा. अपेक्स इलेक्ट्रॉनिक्स लि."
+      },
+      "helperText": {
+        "en": "Manufacturer, dealer, or e-commerce platform.",
+        "hi": "निर्माता, डीलर या ई-कॉमर्स प्लेटफॉर्म।",
+        "mr": "कंपनी किंवा विक्रेत्याचे नाव."
+      },
+      "type": "text",
+      "required": true,
+      "validation": { "minLength": 3, "maxLength": 100 }
+    },
+    {
+      "id": "oppositePartyAddress",
+      "label": {
+        "en": "Opposite Party Registered Office Address",
+        "hi": "विपक्षी दल का पंजीकृत पता",
+        "mr": "कंपनीचा नोंदणीकृत पत्ता"
+      },
+      "placeholder": {
+        "en": "Plot 54, Industrial Area, Phase II, Bengaluru - 560058",
+        "hi": "कार्यालय का आधिकारिक पता",
+        "mr": "कार्यालयाचा पत्ता"
+      },
+      "helperText": {
+        "en": "Official corporate address for court summon.",
+        "hi": "समन भेजने हेतु कंपनी का आधिकारिक पता।",
+        "mr": "समन्स बजावण्यासाठी पत्ता."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 200 }
+    },
+    {
+      "id": "purchaseDetails",
+      "label": {
+        "en": "Product / Service & Invoice Details",
+        "hi": "उत्पाद / सेवा एवं बिल (इनवॉइस) विवरण",
+        "mr": "खरेदी केलेली वस्तू / सेवा आणि बिल तपशील"
+      },
+      "placeholder": {
+        "en": "Purchased 1.5 Ton Inverter AC on 15-05-2024 for ₹42,000 via Invoice #INV-88912.",
+        "hi": "तारीख, उत्पाद का नाम व बिल राशि लिखें।",
+        "mr": "तारीख, वस्तूचे नाव आणि बिल रक्कम."
+      },
+      "helperText": {
+        "en": "Date of transaction, item model, and amount paid.",
+        "hi": "लेन-देन की तारीख, मॉडल और भुगतान की गई राशि।",
+        "mr": "व्यवहाराची तारीख आणि दिलेली रक्कम."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 15, "maxLength": 500 }
+    },
+    {
+      "id": "deficiencyDetails",
+      "label": {
+        "en": "Deficiency in Service / Defect in Goods",
+        "hi": "सेवा में कमी / उत्पाद में खराबी का विवरण",
+        "mr": "सेवेतील त्रुटी किंवा वस्तूतील दोष"
+      },
+      "placeholder": {
+        "en": "Gas leakage within 5 days of purchase. Service engineer failed to repair after 4 visits, refused refund or replacement.",
+        "hi": "वारंवार शिकायत के बाद भी सुधार नहीं किया गया और रिफंड देने से मना कर दिया।",
+        "mr": "वस्तूत बिघाड झाला असून दुरुस्त करून दिली नाही किंवा पैसे परत केले नाहीत."
+      },
+      "helperText": {
+        "en": "Explain defects and how seller failed to fulfill warranty/service.",
+        "hi": "समस्या और कंपनी की लापरवाही स्पष्ट बताएं।",
+        "mr": "त्रास आणि कंपनीची निष्काळजीपणा स्पष्ट लिहा."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 20, "maxLength": 1000 }
+    },
+    {
+      "id": "reliefClaimed",
+      "label": {
+        "en": "Relief / Compensation Claimed (INR ₹)",
+        "hi": "मांगी गई राहत एवं हर्जाना (रुपये ₹ में)",
+        "mr": "मागितलेली नुकसानभरपाई (रुपये ₹)"
+      },
+      "placeholder": {
+        "en": "Full refund of ₹42,000 + ₹20,000 mental agony compensation + ₹10,000 litigation cost.",
+        "hi": "पूरा रिफंड ₹42,000 + मानसिक प्रताड़ना का हर्जाना ₹20,000",
+        "mr": "पूर्ण परतावा ₹४२,००० आणि नुकसानभरपाई ₹२०,०००"
+      },
+      "helperText": {
+        "en": "Breakdown of refund, damages, and litigation expenses.",
+        "hi": "रिफंड, क्षतिपूर्ति एवं वाद व्यय का ब्योरा।",
+        "mr": "नुकसानभरपाई आणि खर्चाचा तपशील."
+      },
+      "type": "textarea",
+      "required": true,
+      "validation": { "minLength": 10, "maxLength": 300 }
+    }
+  ]
+}

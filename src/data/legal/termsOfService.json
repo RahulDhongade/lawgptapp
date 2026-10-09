@@ -1,0 +1,23 @@
+{
+  "title": "LawGPT Terms of Service & Statutory Disclaimer",
+  "statutoryFramework": "Advocates Act, 1961 & Bar Council of India Rules",
+  "lastUpdated": "2024-07-01",
+  "sections": [
+    {
+      "heading": "1. Nature of Advisory Service",
+      "body": "LawGPT is an AI-powered legal information assistant designed to demystify Indian statutory provisions, including the Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and Bharatiya Sakshya Adhiniyam (BSA 2023). LawGPT does NOT constitute court attorney representation, formal legal advice, or a substitute for counsel enrolled under the Advocates Act, 1961."
+    },
+    {
+      "heading": "2. No Attorney-Client Privilege",
+      "body": "Use of LawGPT does not create an attorney-client relationship. Litigants facing criminal prosecution, arrest, civil forfeiture, or complex disputes should engage an enrolled advocate or seek assistance through the Legal Services Authorities (NALSA/DLSA)."
+    },
+    {
+      "heading": "3. Accuracy & Verification",
+      "body": "While LawGPT references verified gazette texts and Supreme Court precedents, legislative amendments and state-specific variations occur continuously. Users must verify all statutory sections, drafts, and court procedures before submitting documents to any court or authority."
+    },
+    {
+      "heading": "4. Emergency Situations",
+      "body": "In cases of immediate physical danger, cyber financial distress, domestic violence, or illegal detention, users must immediately contact official emergency services (112, 1930, 1091) or visit the nearest police station."
+    }
+  ]
+}

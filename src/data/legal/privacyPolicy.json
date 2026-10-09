@@ -1,0 +1,23 @@
+{
+  "title": "LawGPT Privacy Policy",
+  "statutoryFramework": "Digital Personal Data Protection Act, 2023 (DPDP Act 2023) & IT Act 2000",
+  "lastUpdated": "2024-07-01",
+  "sections": [
+    {
+      "heading": "1. Zero Third-Party Monetization",
+      "body": "LawGPT processes user questions solely to deliver legal information, citations, and procedural assistance. We never sell, rent, or lease your personal data or query logs to marketing networks or third parties."
+    },
+    {
+      "heading": "2. Client-Side Encryption & Secure Token Storage",
+      "body": "Authentication tokens are retained solely within your device's hardware-backed encrypted storage (expo-secure-store). Saved items, case diary entries, and consultation history reside on your local device."
+    },
+    {
+      "heading": "3. DPDP Act 2023 Data Portability & Complete Erasure",
+      "body": "In full compliance with Section 6 and Section 12 of the DPDP Act 2023, you have the absolute right to export your entire dataset in machine-readable JSON format at any time, or execute a hard purge ('Delete All My Data') that permanently destroys all cached records on this device."
+    },
+    {
+      "heading": "4. Sovereign Processing",
+      "body": "All backend AI inference requests are transmitted over encrypted TLS 1.3 tunnels and processed in accordance with Indian sovereign data security protocols."
+    }
+  ]
+}
